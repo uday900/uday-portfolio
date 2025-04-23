@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaCss3, FaHtml5, FaJava, FaJs, FaPython, FaReact } from "react-icons/fa";
+import { FaCss3, FaDocker, FaGit, FaHtml5, FaJava, FaJs, FaPython, FaReact } from "react-icons/fa";
 import { SiMysql, SiSpringboot, SiTailwindcss } from "react-icons/si";
 import { BsFileEarmarkExcelFill } from "react-icons/bs";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -18,10 +18,13 @@ const skills = [
   { name: "Tailwind", icon: <SiTailwindcss color="#38B2AC" />, delay: 1.4 },
   { name: "Python", icon: <FaPython color="#3776AB" />, delay: 1.6 },
   { name: "Excel", icon: <BsFileEarmarkExcelFill color="#217346" />, delay: 2.0 },
+  { name: "Git/GitHub", icon: <FaGit  color="#F05032"/>, delay: 2.2 },
+  { name: "Docker", icon: <FaDocker color="#2496ED"/>, delay: 2.4 },
  
 ];
 
 const SkillsWave = () => {
+  
   return (
     <div id="skills" className="bg-gray-100 ">
       <motion.h2

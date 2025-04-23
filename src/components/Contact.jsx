@@ -68,7 +68,10 @@ export default function Contact() {
 
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div 
+        // className="grid md:grid-cols-2 gap-8"  
+        className="flex justify-center"
+        >
           {/* Contact Info */}
           <motion.div
 
@@ -85,12 +88,11 @@ export default function Contact() {
             <p>{contact.city}</p>
             <p>{contact.state} - {contact.zip}, {contact.country} </p>
           </motion.div> 
-          <motion.div
+          {/* <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
 
             transition={{ duration: 0.5 }}>
-            {/* Contact Form */}
             <form onSubmit={(e) => handleClick(e)}>
               <input type="text" placeholder="Enter your name"
                 className="input"
@@ -115,7 +117,7 @@ export default function Contact() {
                 Send Message
               </button>
             </form>
-          </motion.div>
+          </motion.div> */}
 
           {showmsg && <p className="msg-bottom">{message}</p>}
         </div>

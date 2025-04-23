@@ -62,12 +62,41 @@ export const projects = [
             name: "E-commerce Application",
             image: ecommerce,
             points: [
-                "Developed a full-stack e-commerce application using React and Tailwind CSS (front end) and Java, Spring Boot with REST APIs (backend), improving system efficiency by 40%.",
-                "Enhanced security with Spring Security & JWT, reducing unauthorized access by 95%.",
-                "Implemented features like product search, filtering, cart, and order tracking, increasing user engagement by 35%, and admins could manage products, view users, and update order statuses."
-            ],
-            skills: ["React", "Tailwind CSS", "Java", "Spring Boot", "REST API", "JWT", "Spring Security"],
-            git: "https://github.com/uday900/Ecommerce-Backend"
+                "Engineered and deployed a full-stack e-commerce platform using Java, Spring Boot, and REST APIs for the backend, and React with Tailwind CSS for the frontend, resulting in a 40% improvement in system efficiency.",
+                "Integrated OAuth authentication and secured the platform using Spring Security and JWT, reducing unauthorized access incidents by 95%.",
+                "Implemented Razorpay payment gateway, enabling secure transactions and improving checkout success rate by 30%.",
+                "Built dynamic features including product search, filtering, cart, order tracking, and review & rating systems, leading to a 35% boost in user engagement.",
+                "Enhanced admin panel with tools for real-time product management, user monitoring, order status updates, and payment tracking.",
+                "Improved system reliability by integrating robust exception handling, ensuring a smooth and consistent user experience."
+            ],            
+            skills: [
+                "React",
+                "Tailwind CSS",
+                "Java",
+                "Spring Boot",
+                "REST API",
+                "JWT",
+                "Spring Security",
+                "OAuth",
+                "Razorpay Integration",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Redux",
+                "Axios",
+                "MySQL",
+                "Postman",
+                "Git",
+                "GitHub",
+                "Maven",
+                "IntelliJ IDEA",
+                "VS Code",
+                "Exception Handling",
+                "Responsive Web Design",
+                "API Security"
+              ],
+                          
+            git: "https://github.com/uday900/Darla-Stores"
         },
         {
             name: "Employee Management System",

@@ -7,6 +7,7 @@ import { PiLineVerticalBold } from "react-icons/pi";
 
 function Projects() {
   const [showAll, setShowAll] = useState(false);
+  const [showAllSkills, setShowAllSkills] = useState(false);
   return (
     <div id='projects' >
       <div className="bg-gray-100">
@@ -54,7 +55,7 @@ function Projects() {
 
                 {/* Skills */}
                 <div className="mt-3 flex flex-wrap gap-2">
-                  {project.skills.map((skill, i) => (
+                  {project.skills.slice(0, showAllSkills ? project.skills.length : 5).map((skill, i) => (
                     <span
                       key={i}
                       className="px-3 py-1 bg-black text-xs text-white rounded-full"
@@ -62,6 +63,24 @@ function Projects() {
                       {skill}
                     </span>
                   ))}
+
+                  {project.skills.length > 5 && !showAllSkills && (
+                    <span
+                      onClick={() => setShowAllSkills(true)}
+                      className="px-3 py-1 bg-black text-xs text-white rounded-full cursor-pointer"
+                    >
+                      +{project.skills.length - 5} more skills
+                    </span>
+                  )}
+
+                  { showAllSkills && project.skills.length > 5 && (
+                    <span
+                      onClick={() => setShowAllSkills(false)}
+                      className="px-3 py-1 bg-black text-xs text-white rounded-full cursor-pointer"
+                    >
+                      Show Less
+                    </span>
+                  )}
                 </div>
 
                 <div className='mt-4'>
