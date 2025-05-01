@@ -95,7 +95,7 @@ export const projects = [
                 "Responsive Web Design",
                 "API Security"
               ],
-                          
+            link: "https://drive.google.com/file/d/1F2FN-dMpO5Yeq-UVTuWPX0MddOe9OVlP/view?usp=sharing",         
             git: "https://github.com/uday900/Darla-Stores"
         },
         {
