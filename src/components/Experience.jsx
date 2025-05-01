@@ -52,7 +52,7 @@ const Experience = () => {
               {exp.skills.map((skill, i) => (
                 <span
                   key={i}
-                  className="px-3 py-1 bg-black text-xs text-white rounded-full"
+                  className="px-3 py-1 bg-black text-xs text-white rounded-full hover:bg-pink-400 hover:text-black hover:scale-105 duration-300 cursor-pointer"
                 >
                   {skill}
                 </span>

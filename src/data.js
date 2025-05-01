@@ -213,7 +213,7 @@ export const certifications = [
     {
         name: "SQL and Relational Databases",
         issuer: "Cognitive Class",
-        link: ""
+        link: "https://drive.google.com/file/d/1kdYh9bApd8zFLDxoA4Ix9T2NVDYJwOBL/view?usp=sharing"
         
     },
     {

@@ -58,7 +58,7 @@ function Projects() {
                   {project.skills.slice(0, showAllSkills ? project.skills.length : 5).map((skill, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-black text-xs text-white rounded-full"
+                      className="px-3 py-1 bg-black text-xs text-white rounded-full hover:bg-pink-400 hover:text-black hover:scale-105 duration-300 cursor-pointer"
                     >
                       {skill}
                     </span>
@@ -67,7 +67,7 @@ function Projects() {
                   {project.skills.length > 5 && !showAllSkills && (
                     <span
                       onClick={() => setShowAllSkills(true)}
-                      className="px-3 py-1 bg-black text-xs text-white rounded-full cursor-pointer"
+                      className="px-3 py-1 bg-black text-xs text-white rounded-full hover:bg-pink-400 hover:text-black hover:scale-105 duration-300 cursor-pointer"
                     >
                       +{project.skills.length - 5} more skills
                     </span>
