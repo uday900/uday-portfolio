@@ -82,20 +82,24 @@ export const projects = [
                 "HTML",
                 "CSS",
                 "JavaScript",
-                "Redux",
+                
                 "Axios",
-                "MySQL",
+                "PostgresSQL",
                 "Postman",
                 "Git",
                 "GitHub",
                 "Maven",
-                "IntelliJ IDEA",
+                "Spring Tool Suite",
                 "VS Code",
                 "Exception Handling",
                 "Responsive Web Design",
-                "API Security"
+                "API Security",
+                "Netlify",
+                "Render",
+                "Neon DB",
+                "Upstash"
               ],
-            link: "https://drive.google.com/file/d/1F2FN-dMpO5Yeq-UVTuWPX0MddOe9OVlP/view?usp=sharing",         
+            link: "https://darlastores.netlify.app/",         
             git: "https://github.com/uday900/Darla-Stores"
         },
         {
