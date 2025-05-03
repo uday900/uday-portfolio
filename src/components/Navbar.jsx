@@ -30,6 +30,15 @@ const Navbar = () => {
                             )}
                         </a>
                     ))}
+                    {/* resume link */}
+                    <a
+                        href="https://drive.google.com/file/d/190BybJv0sdNed82iIM2SWVV2IQ4_NxlK/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative text-pink-400 hover:text-blue-500 cursor-pointer transition-all"
+                    >
+                        View Resume
+                    </a>
                 </div>
 
                 {/* Mobile Menu Button */}
