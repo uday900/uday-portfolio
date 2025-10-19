@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (
         <nav className="bg-white p-4 shadow-md  fixed top-0 w-full z-10 ">
-            <div className="w-[100%] flex justify-between items-center ">
+            <div className="md:px-26 flex justify-between items-center ">
                 {/* Logo */}
                 <h1 className="text-[25px] font-bold bg-gradient-to-r from-[#0099f7] to-[#f11712] text-transparent bg-clip-text">
                     Uday Portfolio
@@ -15,7 +15,7 @@ const Navbar = () => {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-6 text-sm">
-                    {["home", "about", "skills", "projects", "contact"].map((item) => (
+                    {["home", "about", "skills", "experience", "projects", "contact"].map((item) => (
                         <a
                             href={`#${item}`}
                             key={item}
@@ -53,7 +53,7 @@ const Navbar = () => {
             {/* Mobile Dropdown Menu */}
             {isOpen && (
                 <div className="md:hidden flex flex-col items-center space-y-4 mt-4 backdrop-blur bg-white/30 text-black p-4">
-                    {["home", "about", "skills", "experience", "contact"].map((item) => (
+                    {["home", "about", "skills", "experience", "projects", "contact"].map((item) => (
                         <a
                             key={item}
                             onClick={() => {

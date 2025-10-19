@@ -8,12 +8,14 @@ import financialLogo from "./assets/financial-logo.jpg"
 
 export const fullName = "Darla Udaya Kiran";
 
-export const bio = "A recent graduate from R.V.R & J.C College of Engineering\n" +
-    "with a strong foundation in full-stack development.\n" +
-    "My technical skills have been honed through practical experience, \n" +
-    "including internships where I developed comprehensive web applications. \n" +
-    "I am passionate about leveraging my technical expertise to drive innovation \n" +
-    "and solve complex challenges in the tech industry.";
+export const bio = "I am a dedicated and detail-oriented software developer with hands-on experience in full-stack development, cloud technologies, and modern frameworks.\n" +
+    "Since graduating from R.V.R & J.C College of Engineering in 2024, I’ve gained practical exposure through multiple projects and internships,\n" +
+    "building responsive web applications, implementing RESTful APIs, and optimizing application performance.\n" +
+    "My expertise spans technologies such as React, Java, Spring Boot, Python, Docker, and AWS, allowing me to create scalable and efficient solutions.\n\n" +
+    "Driven by curiosity and a passion for problem-solving, I continuously explore emerging tools and best practices to enhance my technical skills.\n" +
+    "I enjoy transforming ideas into impactful digital products and collaborating within agile teams to deliver production-grade solutions.\n" +
+    "My goal is to contribute to innovative projects that challenge my capabilities while enabling meaningful growth in the software development domain.";
+
 
 
 export const contact = {
@@ -167,6 +169,30 @@ export const projects = [
 
 export const experience= [
     {
+        duration: "Aug 2025 – Present",
+        company_name: "Mojoes Technologies",
+        role: "Junior Java Developer",
+        points: [
+            "Developing and maintaining enterprise-level Java applications using Spring Boot, RESTful APIs, and microservices architecture.",
+            "Collaborating with cross-functional teams to design and implement scalable backend systems and ensure smooth data flow.",
+            "Managing deployment and monitoring processes using AWS services including EC2, S3, and RDS.",
+            "Promoted from Intern to Junior Developer for delivering high-quality, production-grade backend modules within tight deadlines."
+        ],
+        skills: ["Java", "Spring Boot", "Microservices", "AWS", "RESTful APIs", "PostgreSQL", "Git", "Bit bucket", "CI/CD"]
+    },
+     {
+        duration: "Apr 2025 – Jul 2025",
+        company_name: "Mojoes Technologies",
+        role: "Java Developer Intern",
+        points: [
+            "Assisted in backend development using Java and Spring Boot under senior developer guidance.",
+            "Participated in designing RESTful APIs and integrating them with front-end interfaces.",
+            "Built responsive user interfaces using HTML, CSS, and JavaScript for internal modules.",
+            "Gained exposure to debugging, testing, and optimizing code for better performance."
+        ],
+        skills: ["Java", "Spring Boot", "PostgreSQL", "AWS", "REST", "HTML", "CSS", "JavaScript", "Git"]
+    },
+    {
         duration: "Apr 2022 to Jun 2022",
         company_name: "Indian Servers",
         role: "Machine Learning Intern",
@@ -281,15 +307,22 @@ export const education = [
     }
 ]
 
-export const interests = [
-    "Playing Chess",
-    "Yoga",
-    "Cricket",
-    "Book reading"
-]
+export const interest = {
+  title: "Beyond the Code",
+  description:
+    "Apart from coding, I enjoy activities that help me stay sharp, balanced, and creative.",
+  items: [
+    "<b>Playing Chess</b> - sharpens my strategic thinking and focus.",
+    "<b>Yoga</b> - keeps me balanced and mindful.",
+    "<b>Cricket</b> - encourages teamwork and sportsmanship.",
+    "<b>Book Reading</b> - broadens my knowledge and creativity."
+  ]
+};
 
-export const others = [
-    "10th Class School First",
-    "Participate DSA Work shop",
-]
+
+export const acheivments = [
+    "🏆 10th Class School First",
+    "🧠 Participate DSA Work shop",
+    "📈 Solved 150+ Data Structures and Algorithm problems on LeetCode.",
+];
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaDev, FaTelegram, FaArrowCircleDown } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
-import { bio, contact, fullName } from "../data";
+import { contact, fullName } from "../data";
 import { motion } from "framer-motion";
 import profileImage from '../assets/profile.jpg'
 

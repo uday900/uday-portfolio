@@ -1,5 +1,5 @@
 import { act, useState } from "react";
-import { bio, certifications, education, interests, others } from "../data";
+import { bio, certifications, education, interest, acheivments } from "../data";
 import { FaLink } from "react-icons/fa";
 import { motion } from "framer-motion";
 import aboutImage from "../assets/about-image.png"
@@ -19,7 +19,7 @@ const About = () => {
                 className="text-3xl font-bold mb-4 text-center">About</motion.h2>
 
 
-            <div 
+            <div
                 className=" 
                 bg-gray-100 flex flex-col md:flex-row
                  items-center md:items-start space-y-6 md:space-y-0 md:space-x-10 p-6 md:px-32">
@@ -44,47 +44,54 @@ const About = () => {
                     initial={{ opacity: 0, x: 100 }}
                     transition={{ duration: 0.9 }}>
 
-                    <p className="text-gray-700 ">{bio}</p>
+                    <p className="text-gray-700  whitespace-pre-line">{bio}</p>
+
                     {/* Buttons */}
-                    <div className="mt-4 space-x-4 space-y-2 md:space-y-0 mb-4 grid-cols-2 md:grid-cols-4">
-                        {["education", "certifications", "interests", "others"].map((key) => (
-                            <button
-                                key={key}
-                                onClick={() => setActiveSection(key)}
-                                className={`inline-flex items-center px-6 py-2  font-semibold text-sm rounded-full shadow-lg hover:bg-blue-700 transition cursor-pointer
-                                ${activeSection === key
-                                        ? "bg-blue-600  shadow-blue-500/50 text-white"
-                                        : "bg-gray-200 hover:bg-gray-300 shadow-gray-500/50 text-black"
-                                    }`}
-                            >
-                                {key.charAt(0).toUpperCase() + key.slice(1)}
-                            </button>
-                        ))}
+                    <div className="mt-4 mb-4 overflow-x-auto">
+                        <div className="flex space-x-4">
+                            {["education", "certifications", "Achievements", "interest"].map((key) => (
+                                <button
+                                    key={key}
+                                    onClick={() => setActiveSection(key)}
+                                    className={`flex-shrink-0 inline-flex items-center px-6 py-2 font-semibold text-sm rounded-full  hover:bg-blue-700 transition cursor-pointer
+                    ${activeSection === key
+                                            ? "bg-blue-600 shadow-blue-500/50 text-white"
+                                            : "bg-gray-200 hover:bg-gray-300 shadow-gray-500/50 text-black"
+                                        }`}
+                                >
+                                    {key.charAt(0).toUpperCase() + key.slice(1)}
+                                </button>
+                            ))}
+                        </div>
                     </div>
+
 
                     {/* Display Content */}
                     <p className="mt-6 text-gray-700 w-full">
-                        {activeSection === "education" && <>
-                            <ul className="list-disc pl-6 ">
+                        {activeSection === "education" && (
+                            <ul className="list-disc pl-6 marker:text-blue-500" >
                                 {education.map((edu, index) => (
-                                    // change bullets
-                                    <li key={index} className="">
-                                        <h3 className="font-semibold">{edu.degree} <span className="text-sm ml-6 text-slate-500">- {edu.duration}</span></h3>
-                                        <p className="text-gray-600">{edu.college}</p>
-                                        <p className="text-gray-600">{edu.grade}</p>
+                                    <li key={index} >
+                                        <h4 className="font-semibold ">
+                                            {edu.degree}
+                                            <span className="text-sm ml-4 text-slate-500">- {edu.duration}</span>
+                                        </h4>
+                                        <p className="text-gray-600 italic">{edu.college}</p>
+                                        <p className="text-gray-700 font-medium">{edu.grade}</p>
                                     </li>
                                 ))}
                             </ul>
-                        </>}
+                        )}
+
 
                         {activeSection === "certifications" && <>
-                            <ul className="list-disc pl-6 ">
+                            <ul className="list-disc pl-6 marker:text-blue-500 ">
                                 {certifications.slice(0, showAll ? certifications.length - 1 : 4).map((cer, index) => (
                                     // change bullets
                                     <li key={index} className="">
                                         <h3 className="font-semibold">{cer.name} </h3>
-                                        <span className="text-sm ">- issued by {cer.issuer}</span> 
-                                        { cer.link && <a href={cer.link} ><FaLink className="inline mx-2 text-blue-600" /></a>}
+                                        <span className="text-sm ">- issued by {cer.issuer}</span>
+                                        {cer.link && <a href={cer.link} ><FaLink className="inline mx-2 text-blue-600" /></a>}
                                     </li>
                                 ))}
                             </ul>
@@ -92,37 +99,43 @@ const About = () => {
                                 <button onClick={() => setShowAll(!showAll)}
                                     className='cursor-pointer hover:text-pink-400 underline'>{showAll ? <>Show Less</> : <>Show More</>}</button>
                             </div>
-
-                            {/* <span onClick={() => setShowAll(!showAll)}
-                                className="text-pink-500 text-sm cursor-pointer">
-                                {certifications.length > 4 && showAll ? <>Show Less</> : <>Show All</>}
-                            </span> */}
-                        </>}
-                        {activeSection === "interests" && <>
-                            <ul className="list-disc pl-6 ">
-                                {interests.map((cer, index) => (
-                                    // change bullets
-                                    <li key={index} className="">
-                                        <h3 className="font-semibold">{cer} </h3>
-                                        {/* <span className="text-sm ml-6">- issued by {cer.issuer}</span> <a href={cer.link} ><FaLink className="inline mx-2 text-blue-600" /></a> */}
-                                    </li>
-                                ))}
-                            </ul>
-
                         </>}
 
-                        {activeSection === "others" && <>
-                            <ul className="list-disc pl-6 ">
-                                {others.map((cer, index) => (
+                        {activeSection === "Achievements" && <>
+                            <ul className="list-disc pl-6 marker:text-blue-500 ">
+                                {acheivments.map((cer, index) => (
                                     // change bullets
                                     <li key={index} className="">
-                                        <h3 className="font-semibold">{cer} sdf</h3>
+                                        {cer}
                                     </li>
                                 ))}
                             </ul>
 
 
                         </>}
+
+                        {activeSection === "interest" && <>
+                            <section className="text-gray-800">
+                                <h2 className="text-2xl font-bold mb-2 text-blue-600">
+                                    {interest.title}
+                                </h2>
+                                <p className="text-gray-600 mb-4">{interest.description}</p>
+
+                                <ul className="pl-6 list-disc marker:text-blue-600 space-y-2">
+                                    {interest.items.map((item, index) => (
+                                        <li
+                                            key={index}
+                                            className="leading-relaxed"
+                                            dangerouslySetInnerHTML={{ __html: item }}
+                                        />
+                                    ))}
+                                </ul>
+                            </section>
+
+                        </>}
+
+
+
 
 
 

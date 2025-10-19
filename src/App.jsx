@@ -17,6 +17,20 @@ function App() {
      <Projects/>
      <Experience/>
      <Contact/>
+     <footer className="bg-gray-800 text-white py-6 mt-10">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        
+        {/* Copyright and Creator Name */}
+        <p className="text-sm">
+          &copy; 2025 **Uday Portfolio**. All rights reserved.
+        </p>
+
+        {/* Optional: Design/Build credit */}
+        <p className="text-xs text-gray-400 mt-1">
+          Designed and Built with React & Tailwind CSS.
+        </p>
+      </div>
+    </footer>
     </>
   )
 }
