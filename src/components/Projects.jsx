@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { projects } from '../data'
-import image from '../assets/ems.png'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import { PiLineVerticalBold } from "react-icons/pi";
 
@@ -19,11 +18,11 @@ function Projects() {
             className="text-3xl font-bold mb-4 text-center">Projects</motion.h2>
 
 
-          {projects.slice(0, showAll ? projects.length  : 4).map((project, index) => (
+          {projects.slice(0, showAll ? projects.length : 4).map((project, index) => (
             <div
               key={index} className="flex flex-col md:flex-row items-start  gap-6 mb-8"
             >
-              
+
               {/* Left Side: Date */}
               <motion.div className="md:w-1/4 text-gray-400 font-semibold text-sm md:text-right"
 
@@ -37,7 +36,7 @@ function Projects() {
               </motion.div>
 
               {/* Right Side: Company, Role, Details */}
-              <motion.div className="md:w-3/4  px-5 pb-4 rounded-lg shadow-lg "
+              <motion.div className="md:w-3/4  px-5 pb-4 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
 
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 200 }}
@@ -73,10 +72,10 @@ function Projects() {
                     </span>
                   )}
 
-                  { showAllSkills && project.skills.length > 5 && (
+                  {showAllSkills && project.skills.length > 5 && (
                     <span
                       onClick={() => setShowAllSkills(false)}
-                      className="px-3 py-1 bg-black text-xs text-white rounded-full cursor-pointer"
+                      className="px-3 py-1 bg-black text-xs text-white rounded-full cursor-pointer "
                     >
                       Show Less
                     </span>
@@ -87,14 +86,14 @@ function Projects() {
                   {project.link &&
                     <a className='cursor-pointer text-blue-500 active:text-pink-400 mr-4'
                       href={project.link} >
-                      Project Link <FaExternalLinkAlt className='inline' />
+                      Live Demo <FaExternalLinkAlt className='inline' />
                     </a>
                   }
 
                   {project.git &&
                     <a className='cursor-pointer text-blue-500 active:text-pink-400'
                       href={project.git} >
-                      GitHub Link <FaExternalLinkAlt className='inline' />
+                      GitHub <FaExternalLinkAlt className='inline' />
                     </a>
                   }
 
@@ -105,8 +104,8 @@ function Projects() {
           ))}
 
           <div className='text-center'>
-            <button onClick={()=> setShowAll(!showAll)}
-              className='cursor-pointer hover:text-pink-400 underline'>{showAll ? <>Show Less</> : <>Show More</> }</button>
+            <button onClick={() => setShowAll(!showAll)}
+              className='cursor-pointer hover:text-pink-400 underline'>{showAll ? <>Show Less</> : <>Show More</>}</button>
           </div>
         </div>
       </div>

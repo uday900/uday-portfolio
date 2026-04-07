@@ -2,7 +2,7 @@ import { useState } from "react";
 import { SiLeetcode } from "react-icons/si";
 import { motion } from "framer-motion";
 import { contact } from "../data";
-import naukri from '../assets/naukri-icon.png'
+const naukri = "/assets/naukri.png";
 
 export default function Contact() {
 

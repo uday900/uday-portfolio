@@ -2,7 +2,7 @@ import { act, useState } from "react";
 import { bio, certifications, education, interest, acheivments } from "../data";
 import { FaLink } from "react-icons/fa";
 import { motion } from "framer-motion";
-import aboutImage from "../assets/about-image.png"
+const aboutImage = "/assets/about-image.png";
 const About = () => {
 
 
@@ -16,7 +16,7 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -50 }}
                 transition={{ duration: 0.9 }}
-                className="text-3xl font-bold mb-4 text-center">About</motion.h2>
+                className="text-3xl font-bold mb-4 text-center">About me</motion.h2>
 
 
             <div
@@ -86,12 +86,37 @@ const About = () => {
 
                         {activeSection === "certifications" && <>
                             <ul className="list-disc pl-6 marker:text-blue-500 ">
-                                {certifications.slice(0, showAll ? certifications.length - 1 : 4).map((cer, index) => (
-                                    // change bullets
-                                    <li key={index} className="">
-                                        <h3 className="font-semibold">{cer.name} </h3>
-                                        <span className="text-sm ">- issued by {cer.issuer}</span>
-                                        {cer.link && <a href={cer.link} ><FaLink className="inline mx-2 text-blue-600" /></a>}
+                                {certifications.slice(0, showAll ? certifications.length : 4).map((cer, index) => (
+                                
+                                    <li key={index} className="flex items-start gap-3 mb-3">
+
+                                        <img
+                                            src={cer.issuerLogo}
+                                            alt=""
+                                            className="w-12 h-12 object-contain mt-1"
+                                        />
+
+                                        <div className="flex-1">
+                                            <h3 className="font-semibold leading-tight">
+                                                {cer.name}
+                                            </h3>
+
+                                            <span className="text-sm text-gray-500">
+                                                Issued by {cer.issuer}
+                                            </span>
+                                        </div>
+
+                                        {cer.link && (
+  <a
+    href={cer.link}
+    target="_blank"
+    rel="noreferrer"
+    className="text-sm text-blue-600 font-medium hover:underline whitespace-nowrap"
+  >
+    <span className="hidden sm:inline">View Certificate →</span>
+    <span className="sm:hidden">View →</span>
+  </a>
+)}
                                     </li>
                                 ))}
                             </ul>

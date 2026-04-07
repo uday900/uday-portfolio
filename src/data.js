@@ -1,22 +1,50 @@
+import {
+    FaJava, FaReact, FaHtml5, FaCss3, FaJs,
+    FaPython, FaGit, FaDocker
+} from "react-icons/fa";
 
-import ems from "./assets/ems.png";
-import ecommerce from "./assets/ecommerce.avif";
-import btc from "./assets/btc.jpg";
-import quizapp from "./assets/quizapp.webp";
-import todoapp from "./assets/todoapp.avif";
-import financialLogo from "./assets/financial-logo.jpg"
+import {
+    SiSpringboot, SiMysql, SiTailwindcss,
+    SiKubernetes, SiSpring,
+    SiPostman, SiIntellijidea,
+    SiExpo , SiRedux 
+} from "react-icons/si";
+import { FaAws } from "react-icons/fa6";
+
+import { BiLogoPostgresql } from "react-icons/bi";
+import { BsFileEarmarkExcelFill } from "react-icons/bs";
+import { TbBrandReactNative } from "react-icons/tb";
+import { VscVscode } from "react-icons/vsc";
+
+
+const ems = "/assets/ems.png";
+const ecommerce = "/assets/ecommerce.avif";
+const btc = "/assets/btc.jpg";
+const quizapp = "/assets/quizapp.webp";
+const todoapp = "/assets/todoapp.avif";
+const financialLogo = "/assets/financial-logo.jpg";
+
+const awsLogo = "/assets/aws-academy-logo.jpeg";
+const digitalLyncLogo = "/assets/digital-lync-logo.jpeg";
+const infosysSpringboardLogo = "/assets/infosys-springboard-logo.png";
+const cognitiveClassLogo = "/assets/cognitive-class-logo.png";
+const nptelLogo = "/assets/nptel-logo.jpeg";
+const courseraLogo = "/assets/coursera-logo.jpg";
+const wiproLogo = "/assets/wipro-logo.jpeg";
 
 export const fullName = "Darla Udaya Kiran";
 
-export const bio = "I am a dedicated and detail-oriented software developer with hands-on experience in full-stack development, cloud technologies, and modern frameworks.\n" +
-    "Since graduating from R.V.R & J.C College of Engineering in 2024, I’ve gained practical exposure through multiple projects and internships,\n" +
-    "building responsive web applications, implementing RESTful APIs, and optimizing application performance.\n" +
-    "My expertise spans technologies such as React, Java, Spring Boot, Python, Docker, and AWS, allowing me to create scalable and efficient solutions.\n\n" +
-    "Driven by curiosity and a passion for problem-solving, I continuously explore emerging tools and best practices to enhance my technical skills.\n" +
-    "I enjoy transforming ideas into impactful digital products and collaborating within agile teams to deliver production-grade solutions.\n" +
-    "My goal is to contribute to innovative projects that challenge my capabilities while enabling meaningful growth in the software development domain.";
+export const bio = "I’m a passionate Full Stack Developer with over a year of hands-on experience building scalable backend systems and modern web applications.\n" +
+    "I specialize in Java and Spring Boot, designing secure, high-performance REST APIs and microservices for real-world use cases.\n" +
+    "On the frontend, I work with React.js to create responsive and user-friendly interfaces that deliver seamless user experiences.\n\n" +
+    "I have practical experience deploying and managing applications on AWS, along with working on Docker and CI/CD pipelines to ensure reliable and production-ready systems.\n" +
+    "My work includes building secure authentication systems using JWT and OAuth, implementing real-time features with WebSockets, and integrating payment gateways.\n\n" +
+    "I enjoy solving complex problems, optimizing performance, and building impactful digital products.\n" +
+    "I thrive in Agile environments, collaborating with cross-functional teams to deliver scalable and efficient solutions.\n" +
+    "I am continuously learning and exploring new technologies to grow as a software engineer.\n\n" +
+    "My goal is to contribute to innovative projects, build high-quality systems, and create meaningful impact through technology.";
 
-
+export const resumeLink = "https://drive.google.com/file/d/1JBymYlXp9StJFgq-Z1fx7Gv91jUu4sDK/view?usp=drive_link";
 
 export const contact = {
     socialLinks: [
@@ -29,22 +57,32 @@ export const contact = {
             link: "https://github.com/uday900",
         },
         {
-            name: "twitter",
-            link: "https://x.com/Delay1709",
-        },
-       
-        {
-            name: "instagram",
-            link: "https://www.instagram.com/uday1709_?igsh=MTU1a2s4dWdlcWVmcQ==",
-        },
-      
-        {
             name: "leetcode",
             link: "https://leetcode.com/u/uday080/"
         },
         {
-            name: "Naukri", 
+            name: "upwork",
+            link: "https://www.upwork.com/freelancers/~01b1c8e5a9c0e7d2f6"
+        },
+        {
+            name: "naukri",
             link: "https://www.naukri.com/mnjuser/profile?id=&altresid"
+        },
+        {
+            name: "medium",
+            link: "https://uday900.medium.com/"
+        },
+        {
+            name: "instagram",
+            link: "https://www.instagram.com/uday1709_?igsh=MTU1a2s4dWdlcWVmcQ==",
+        },
+        {
+            name: "twitter",
+            link: "https://x.com/Delay1709",
+        },
+        {
+            name: "telegram",
+            link: "https://t.me/uday1709",
         }
 
     ],
@@ -56,79 +94,79 @@ export const contact = {
     state: "Telangana",
     zip: "500081",
     town: "Madhapur",
-    
+
 }
 
 export const projects = [
-        {
-            name: "E-commerce Application",
-            image: ecommerce,
-            points: [
-                "Engineered and deployed a full-stack e-commerce platform using Java, Spring Boot, and REST APIs for the backend, and React with Tailwind CSS for the frontend, resulting in a 40% improvement in system efficiency.",
-                "Integrated OAuth authentication and secured the platform using Spring Security and JWT, reducing unauthorized access incidents by 95%.",
-                "Implemented Razorpay payment gateway, enabling secure transactions and improving checkout success rate by 30%.",
-                "Built dynamic features including product search, filtering, cart, order tracking, and review & rating systems, leading to a 35% boost in user engagement.",
-                "Enhanced admin panel with tools for real-time product management, user monitoring, order status updates, and payment tracking.",
-                "Improved system reliability by integrating robust exception handling, ensuring a smooth and consistent user experience."
-            ],            
-            skills: [
-                "React",
-                "Tailwind CSS",
-                "Java",
-                "Spring Boot",
-                "REST API",
-                "JWT",
-                "Spring Security",
-                "OAuth",
-                "Razorpay Integration",
-                "HTML",
-                "CSS",
-                "JavaScript",
-                
-                "Axios",
-                "PostgresSQL",
-                "Postman",
-                "Git",
-                "GitHub",
-                "Maven",
-                "Spring Tool Suite",
-                "VS Code",
-                "Exception Handling",
-                "Responsive Web Design",
-                "API Security",
-                "Netlify",
-                "Render",
-                "Neon DB",
-                "Upstash"
-              ],
-            link: "https://darlastores.netlify.app/",         
-            git: "https://github.com/uday900/Darla-Stores"
-        },
-        {
-            name: "Employee Management System",
-            image: ems,
-            points: [
-                "Developed an Employee Management System using React, Vite, Redux, and Tailwind CSS with role-based access control (RBAC), reducing administrative workload by 40%.",
-                "Designed a responsive and intuitive UI with Tailwind CSS, HTML, and JavaScript, improving engagement by 35% and reducing data entry errors by 25%.",
-                "Implemented role assignment, access level visualization, and dynamic UI updates, enhancing system adaptability by 50%."
-            ],
-            skills: ["React", "Vite", "Redux", "Tailwind CSS", "RBAC"],
-            link: "https://role-based-access-control-ui-task.netlify.app/",
-            git: "https://github.com/uday900/-Role-Based-Access-Control-UI"
-        },
-        {
-            name: "Quiz Application",
-            image: quizapp,
-            points: [
-                "Developed a Quiz Application using React, Vite, and Redux, ensuring 99% compatibility across devices, leading to increased user engagement.",
-                "Integrated Redux for real-time quiz tracking and user interaction, improving user experience and boosting retention rates by 20%.",
-                "Implemented quiz creation, quiz-taking functionality, and score tracking, resulting in a 30% increase in daily active users."
-            ],
-            skills: ["React", "Vite", "Redux"],
-            link: "https://udayquizapp.netlify.app/",
-            git:"https://github.com/uday900/quizapp"
-        },    
-   
+    {
+        name: "E-commerce Application",
+        image: ecommerce,
+        points: [
+            "Engineered and deployed a full-stack e-commerce platform using Java, Spring Boot, and REST APIs for the backend, and React with Tailwind CSS for the frontend, resulting in a 40% improvement in system efficiency.",
+            "Integrated OAuth authentication and secured the platform using Spring Security and JWT, reducing unauthorized access incidents by 95%.",
+            "Implemented Razorpay payment gateway, enabling secure transactions and improving checkout success rate by 30%.",
+            "Built dynamic features including product search, filtering, cart, order tracking, and review & rating systems, leading to a 35% boost in user engagement.",
+            "Enhanced admin panel with tools for real-time product management, user monitoring, order status updates, and payment tracking.",
+            "Improved system reliability by integrating robust exception handling, ensuring a smooth and consistent user experience."
+        ],
+        skills: [
+            "React",
+            "Tailwind CSS",
+            "Java",
+            "Spring Boot",
+            "REST API",
+            "JWT",
+            "Spring Security",
+            "OAuth",
+            "Razorpay Integration",
+            "HTML",
+            "CSS",
+            "JavaScript",
+
+            "Axios",
+            "PostgresSQL",
+            "Postman",
+            "Git",
+            "GitHub",
+            "Maven",
+            "Spring Tool Suite",
+            "VS Code",
+            "Exception Handling",
+            "Responsive Web Design",
+            "API Security",
+            "Netlify",
+            "Render",
+            "Neon DB",
+            "Upstash"
+        ],
+        link: "https://darlastores.netlify.app/",
+        git: "https://github.com/uday900/Darla-Stores"
+    },
+    {
+        name: "Employee Management System",
+        image: ems,
+        points: [
+            "Developed an Employee Management System using React, Vite, Redux, and Tailwind CSS with role-based access control (RBAC), reducing administrative workload by 40%.",
+            "Designed a responsive and intuitive UI with Tailwind CSS, HTML, and JavaScript, improving engagement by 35% and reducing data entry errors by 25%.",
+            "Implemented role assignment, access level visualization, and dynamic UI updates, enhancing system adaptability by 50%."
+        ],
+        skills: ["React", "Vite", "Redux", "Tailwind CSS", "RBAC"],
+        link: "https://role-based-access-control-ui-task.netlify.app/",
+        git: "https://github.com/uday900/-Role-Based-Access-Control-UI"
+    },
+    {
+        name: "Quiz Application",
+        image: quizapp,
+        points: [
+            "Developed a Quiz Application using React, Vite, and Redux, ensuring 99% compatibility across devices, leading to increased user engagement.",
+            "Integrated Redux for real-time quiz tracking and user interaction, improving user experience and boosting retention rates by 20%.",
+            "Implemented quiz creation, quiz-taking functionality, and score tracking, resulting in a 30% increase in daily active users."
+        ],
+        skills: ["React", "Vite", "Redux"],
+        link: "https://udayquizapp.netlify.app/",
+        git: "https://github.com/uday900/quizapp"
+    },
+
     {
         name: "Brain Tumor Classification",
         image: btc,
@@ -164,10 +202,10 @@ export const projects = [
         ],
         skills: ["React.js", "Redux", "HTML", "CSS", "JavaScript"]
     }
-   
+
 ];
 
-export const experience= [
+export const experience = [
     {
         duration: "Aug 2025 – Present",
         company_name: "Mojoes Technologies",
@@ -180,7 +218,7 @@ export const experience= [
         ],
         skills: ["Java", "Spring Boot", "Microservices", "AWS", "RESTful APIs", "PostgreSQL", "Git", "Bit bucket", "CI/CD"]
     },
-     {
+    {
         duration: "Apr 2025 – Jul 2025",
         company_name: "Mojoes Technologies",
         role: "Java Developer Intern",
@@ -213,83 +251,100 @@ export const experience= [
         skills: ["HTML", "CSS", "JavaScript", "React.js"]
     }
 ]
-
 export const skills = [
-    "Java",
-    "Spring Boot",
-    "React",
-    "SQL",
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Tailwind",
-    "python",
-    "C",
-    "Excel",
-]
+  { name: "Java", icon: FaJava, color: "#007396", delay: 0, type: "top", category: "Backend" },
+  { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F", delay: 0.2, type: "top", category: "Backend" },
+  { name: "React", icon: FaReact, color: "#61DAFB", delay: 0.4, type: "top", category: "Frontend" },
+  { name: "Docker", icon: FaDocker, color: "#2496ED", delay: 0.6, type: "top", category: "DevOps" },
+  { name: "AWS", icon: FaAws, color: "#FF9900", delay: 0.8, type: "top", category: "DevOps" },
+
+  { name: "Redux", icon: SiRedux, color: "#764ABC", delay: 1.0, category: "Frontend" },
+  { name: "HTML", icon: FaHtml5, color: "#E34F26", category: "Frontend" },
+  { name: "CSS", icon: FaCss3, color: "#1572B6", category: "Frontend" },
+  { name: "JavaScript", icon: FaJs, color: "#F7DF1E", category: "Frontend" },
+  { name: "Tailwind", icon: SiTailwindcss, color: "#38B2AC", category: "Frontend" },
+
+  { name: "Python", icon: FaPython, color: "#3776AB", category: "Backend" },
+
+  { name: "MySQL", icon: SiMysql, color: "#4479A1", category: "Database" },
+  { name: "PostgreSQL", icon: BiLogoPostgresql, color: "#336791", category: "Database" },
+
+  { name: "Git", icon: FaGit, color: "#F05032", category: "DevOps" },
+  { name: "Kubernetes", icon: SiKubernetes, color: "#326CE5", category: "DevOps" },
+
+  { name: "React Native", icon: TbBrandReactNative, color: "#61DAFB", category: "Mobile" },
+  { name: "Expo", icon: SiExpo , color: "#000020", category: "Mobile" },
+
+  { name: "Excel", icon: BsFileEarmarkExcelFill, color: "#217346", category: "Tools" },
+  { name: "Postman", icon: SiPostman, color: "#FF6C37", category: "Tools" },
+  { name: "Spring Tool Suite", icon: SiSpring, color: "#6DB33F", category: "Tools" },
+  { name: "IntelliJ IDEA", icon: SiIntellijidea, color: "#000000", category: "Tools" },
+  { name: "VS Code", icon: VscVscode, color: "#007ACC", category: "Tools" }
+];
 
 export const certifications = [
-    
     {
-        name: "Java Full Stack",
-        issuer: "Digital Lync",
-        link: "https://drive.google.com/file/d/1QJQZ-WO-Mbd7RJ-JT5y9c2_uTL-XzMvE/view?usp=sharing"
+        name: "TalentNext course on Java Full Stack",
+        issuer: "Wipro @TalentNext",
+        issuerLogo: wiproLogo,
+        link: "https://cert.diceid.com/csr/cid/5BjoMa?verify=true"
+    },
+    {
+        name: "AWS Academy Graduate - AWS Academy Cloud Foundations",
+        issuer: "AWS Academy",
+        issuerLogo: awsLogo,
+        link: "https://www.credly.com/go/axYx1Se2"
     },
     {
         name: "React JS",
         issuer: "Infosys Springboard",
+        issuerLogo: infosysSpringboardLogo,
         link: "https://drive.google.com/file/d/13ik_Kpz72fZDBHmlg3U9sYGdAQrPtRo-/view?usp=sharing"
     },
     {
         name: "SQL and Relational Databases",
         issuer: "Cognitive Class",
+        issuerLogo: cognitiveClassLogo,
         link: "https://drive.google.com/file/d/1kdYh9bApd8zFLDxoA4Ix9T2NVDYJwOBL/view?usp=sharing"
-        
+
     },
     {
-        name: "AWS Academy Graduate - AWS Academy Cloud Foundations",
-        issuer: "AWS Academy",
-        link: "https://www.credly.com/go/axYx1Se2"
+        name: "Java Full Stack",
+        issuer: "Digital Lync",
+        issuerLogo: digitalLyncLogo,
+        link: "https://drive.google.com/file/d/1QJQZ-WO-Mbd7RJ-JT5y9c2_uTL-XzMvE/view?usp=sharing"
     },
+
     {
         name: "Programming in Java",
         issuer: "NPTEL",
+        issuerLogo: nptelLogo,
         link: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS47S3345036102220759"
     },
     {
         name: "The Joy of Computing using Python",
         issuer: "NPTEL",
+        issuerLogo: nptelLogo,
         link: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL21CS75S1354014803223592"
     },
-
-   
     {
         name: "Google Data Analytics",
         issuer: "Coursera",
+        issuerLogo: courseraLogo,
         link: "https://coursera.org/verify/professional-cert/XW5RZV24BQQB"
     },
     {
         name: "AWS Academy Machine Learning Foundations",
         issuer: "AWS Academy",
+        issuerLogo: awsLogo,
         link: "https://www.credly.com/go/AHr3r3MA"
-    },
-  
-    {
-        name: "TalentNext course on Java Full Stack",
-        issuer: "Wipro @TalentNext",
-        link: "https://cert.diceid.com/csr/cid/5BjoMa?verify=true"
-    },
-    
-   
-   
-
-
+    }
 ]
 
 export const education = [
     {
         college: "R.V.R & J.C College of Engineering",
-        degree: "B.E. in Computer Science and Engineering",
+        degree: "B.Tech in Computer Science and Engineering",
         duration: "2020-2024",
         grade: "CGPA: 8.16"
     },
@@ -308,21 +363,21 @@ export const education = [
 ]
 
 export const interest = {
-  title: "Beyond the Code",
-  description:
-    "Apart from coding, I enjoy activities that help me stay sharp, balanced, and creative.",
-  items: [
-    "<b>Playing Chess</b> - sharpens my strategic thinking and focus.",
-    "<b>Yoga</b> - keeps me balanced and mindful.",
-    "<b>Cricket</b> - encourages teamwork and sportsmanship.",
-    "<b>Book Reading</b> - broadens my knowledge and creativity."
-  ]
+    title: "Beyond the Code",
+    description:
+        "Apart from coding, I enjoy activities that help me stay sharp, balanced, and creative.",
+    items: [
+        "<b>Playing Chess</b> - sharpens my strategic thinking and focus.",
+        "<b>Yoga</b> - keeps me balanced and mindful.",
+        "<b>Cricket</b> - encourages teamwork and sportsmanship.",
+        "<b>Book Reading</b> - broadens my knowledge and creativity."
+    ]
 };
 
 
 export const acheivments = [
-    "🏆 10th Class School First",
-    "🧠 Participate DSA Work shop",
-    "📈 Solved 150+ Data Structures and Algorithm problems on LeetCode.",
+    "🏆 Secured 1st Rank in 10th Grade (School Topper)",
+    "🧠 Actively participated in Data Structures & Algorithms (DSA) workshops",
+    "📈 Solved 150+ Data Structures and Algorithms problems on LeetCode",
 ];
 

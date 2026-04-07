@@ -1,9 +1,17 @@
 import { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaDev, FaTelegram, FaArrowCircleDown } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaDev, FaTelegram, FaMedium } from "react-icons/fa";
+import { FaSquareUpwork } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
-import { contact, fullName } from "../data";
+import { contact, fullName, resumeLink } from "../data";
 import { motion } from "framer-motion";
-import profileImage from '../assets/profile.jpg'
+
+const profileImage = "/assets/profile.jpg";
+const naukriLogo = "/assets/naukri.png";
+const githHubLogo = "/assets/github_logo.png";
+const linkedinLogo = "/assets/linkedin_logo.png";
+const upworkLogo = "/assets/upwork_logo.png";
+const mediumLogo = "/assets/medium_logo.png";
+const leetcodeLogo = "/assets/leetcode_logo.png";
 
 const HeroSection = () => {
     const designations = ["Fullstack Developer", "Java Developer", "Backend Developer", "Frontend Developer"];
@@ -13,37 +21,47 @@ const HeroSection = () => {
     const [isDeleting, setIsDeleting] = useState(false);
 
     const socialIcons = {
-        linkedin: FaLinkedin,
-        github: FaGithub,
-        twitter: FaTwitter,
-        instagram: FaInstagram,
-        telegram: FaTelegram,
-        leetcode: SiLeetcode,
+        linkedin: linkedinLogo,
+        upwork: upworkLogo,
+        github: githHubLogo,
+        naukri: naukriLogo,
+        leetcode: leetcodeLogo,
+        medium: mediumLogo,
+
         dev: FaDev,  // If you need Dev.to icon
-       
+
     };
     useEffect(() => {
         const currentText = designations[index];
-        let typingSpeed = isDeleting ? 50 : 80; // in ms
 
-        if (!isDeleting && charIndex === currentText.length) {
-            setTimeout(() => setIsDeleting(true), 500);
-        } else if (isDeleting && charIndex === 0) {
+        let timeout;
+
+        if (!isDeleting && charIndex < currentText.length) {
+            timeout = setTimeout(() => {
+                setText(currentText.substring(0, charIndex + 1));
+                setCharIndex(prev => prev + 1);
+            }, 80);
+        }
+        else if (isDeleting && charIndex > 0) {
+            timeout = setTimeout(() => {
+                setText(currentText.substring(0, charIndex - 1));
+                setCharIndex(prev => prev - 1);
+            }, 40);
+        }
+        else if (!isDeleting && charIndex === currentText.length) {
+            timeout = setTimeout(() => setIsDeleting(true), 1200); // ⏸ pause
+        }
+        else if (isDeleting && charIndex === 0) {
             setIsDeleting(false);
-            setIndex((prevIndex) => (prevIndex + 1) % designations.length);
+            setIndex(prev => (prev + 1) % designations.length);
         }
 
-        const timeout = setTimeout(() => {
-            setText(currentText.slice(0, charIndex + (isDeleting ? -1 : 1)));
-            setCharIndex((prev) => prev + (isDeleting ? -1 : 1));
-        }, typingSpeed);
-
         return () => clearTimeout(timeout);
-    }, [charIndex, isDeleting, index, designations]);
+    }, [charIndex, isDeleting, index]);
 
     return (
-        <section id="home" 
-        className="p-8  bg-gray-100 flex flex-col-reverse md:flex-row items-center justify-around  md:p-32 min-h-screen mt-16 md:mt-0 ">
+        <section id="home"
+            className="p-8  bg-gray-100 flex flex-col-reverse md:flex-row items-center justify-around  md:p-32 min-h-screen mt-16 md:mt-0 ">
             <motion.div
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: -100 }}
@@ -55,22 +73,41 @@ const HeroSection = () => {
                     Hi There, <br /> I'm <span className="text-blue-500">{fullName}</span>
                 </h1>
                 <p className="text-lg font-semibold mt-2 text-gray-700">
-                    I Am a <span className="text-[#C70039]">{text}|</span>
+                    I Am a <span className="bg-gradient-to-r from-pink-700 to-red-500 text-transparent bg-clip-text">
+                        {text}
+                        <span className="blink">|</span>
+                    </span>
                 </p>
-                <a href="#about"
-                    className="mt-6 inline-flex items-center  px-6 py-2 bg-blue-600 text-white font-semibold rounded-full shadow-lg shadow-blue-500/50 hover:bg-blue-700 transition cursor-pointer"
+                <a
+                    href={resumeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-flex items-center  px-6 py-2 bg-blue-600 text-white font-semibold rounded-full shadow-lg"
                 >
-                    About Me <FaArrowCircleDown className="ml-2 text-lg inline" />
+                    View Resume
                 </a>
                 <div className="flex space-x-4 mt-6 justify-center md:justify-start ">
-                    {contact.socialLinks.slice(0, 5).map((acc, _) => {
+                    {/* {contact.socialLinks.slice(0, 6).map((acc, _) => {
                         const Icon = socialIcons[acc.name] || FaDev; // Default to FaDev if not found
                         return (
                             <a href={acc.link} key={_} target="_blank" rel="noopener noreferrer">
                                 <Icon className="text-2xl cursor-pointer hover:text-gray-800" />
                             </a>
                         )
-                    })}
+                    })} */}
+                    {contact.socialLinks
+                        .filter(acc => ["linkedin", "naukri", "upwork", "github", "leetcode", "medium"].includes(acc.name))
+                        .map((acc, _) => {
+
+                            const Icon = socialIcons[acc.name];
+
+                            return (
+                                <a href={acc.link} key={_} target="_blank">
+                                    {/* <Icon className="text-xl cursor-pointer text-gray-700 hover:text-black hover:scale-110 transition" /> */}
+                                    <img src={Icon} alt={`${acc.name} logo`} className="w-6 h-6 object-contain hover:scale-110 transition" />
+                                </a>
+                            );
+                        })}
                 </div>
             </motion.div>
             <motion.div
