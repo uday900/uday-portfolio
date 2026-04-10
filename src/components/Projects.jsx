@@ -18,9 +18,9 @@ function Projects() {
             className="text-3xl font-bold mb-4 text-center">Projects</motion.h2>
 
 
-          {projects.slice(0, showAll ? projects.length : 4).map((project, index) => (
+          {projects.slice(0, showAll ? projects.length : 3).map((project, index) => (
             <div
-              key={index} className="flex flex-col md:flex-row items-start  gap-6 mb-8"
+              key={index} className="flex flex-col md:flex-row items-start  gap-6 mb-10"
             >
 
               {/* Left Side: Date */}

@@ -1,17 +1,7 @@
 import { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaDev, FaTelegram, FaMedium } from "react-icons/fa";
-import { FaSquareUpwork } from "react-icons/fa6";
-import { SiLeetcode } from "react-icons/si";
 import { contact, fullName, resumeLink } from "../data";
 import { motion } from "framer-motion";
-
 const profileImage = "/assets/profile.jpg";
-const naukriLogo = "/assets/naukri.png";
-const githHubLogo = "/assets/github_logo.png";
-const linkedinLogo = "/assets/linkedin_logo.png";
-const upworkLogo = "/assets/upwork_logo.png";
-const mediumLogo = "/assets/medium_logo.png";
-const leetcodeLogo = "/assets/leetcode_logo.png";
 
 const HeroSection = () => {
     const designations = ["Fullstack Developer", "Java Developer", "Backend Developer", "Frontend Developer"];
@@ -19,18 +9,9 @@ const HeroSection = () => {
     const [index, setIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
+    const [hoveredIndex, setHoveredIndex] = useState(null);
 
-    const socialIcons = {
-        linkedin: linkedinLogo,
-        upwork: upworkLogo,
-        github: githHubLogo,
-        naukri: naukriLogo,
-        leetcode: leetcodeLogo,
-        medium: mediumLogo,
 
-        dev: FaDev,  // If you need Dev.to icon
-
-    };
     useEffect(() => {
         const currentText = designations[index];
 
@@ -86,28 +67,38 @@ const HeroSection = () => {
                 >
                     View Resume
                 </a>
-                <div className="flex space-x-4 mt-6 justify-center md:justify-start ">
-                    {/* {contact.socialLinks.slice(0, 6).map((acc, _) => {
-                        const Icon = socialIcons[acc.name] || FaDev; // Default to FaDev if not found
-                        return (
-                            <a href={acc.link} key={_} target="_blank" rel="noopener noreferrer">
-                                <Icon className="text-2xl cursor-pointer hover:text-gray-800" />
-                            </a>
-                        )
-                    })} */}
+                <div className="flex mt-6 justify-center md:justify-start ">
+
                     {contact.socialLinks
-                        .filter(acc => ["linkedin", "naukri", "upwork", "github", "leetcode", "medium"].includes(acc.name))
-                        .map((acc, _) => {
-
-                            const Icon = socialIcons[acc.name];
-
-                            return (
-                                <a href={acc.link} key={_} target="_blank">
-                                    {/* <Icon className="text-xl cursor-pointer text-gray-700 hover:text-black hover:scale-110 transition" /> */}
-                                    <img src={Icon} alt={`${acc.name} logo`} className="w-6 h-6 object-contain hover:scale-110 transition" />
+                        .filter(item => ["linkedin", "github", "leetcode", "upwork", "geeeksforgeeks", "medium"].includes(item.name))
+                        .map((item, i) => (
+                            <div
+                                key={i}
+                                className="relative flex flex-col items-center"
+                                onMouseEnter={() => setHoveredIndex(i)}
+                                onMouseLeave={() => setHoveredIndex(null)}
+                            >
+                                <a
+                                    href={item.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-14 h-14 flex items-center justify-center hover:scale-110 transition"
+                                >
+                                    <div className="w-14 h-14 rounded-full flex items-center justify-center ">
+                                        <img
+                                            src={item.icon}
+                                            alt={item.name}
+                                            className="max-w-[55%] max-h-[55%] object-contain"
+                                        />
+                                    </div>
                                 </a>
-                            );
-                        })}
+                                {hoveredIndex === i && (
+                                    <div className="absolute top-full mt-2 px-2 py-1 bg-gray-800 text-white text-sm rounded shadow-lg whitespace-nowrap">
+                                        {item.display}
+                                    </div>
+                                )}
+                            </div>
+                        ))}
                 </div>
             </motion.div>
             <motion.div

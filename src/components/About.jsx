@@ -7,7 +7,7 @@ const About = () => {
 
 
     // State to track active section
-    const [activeSection, setActiveSection] = useState("education");
+    const [activeSection, setActiveSection] = useState("certifications");
     const [showAll, setShowAll] = useState(false);
 
     return (

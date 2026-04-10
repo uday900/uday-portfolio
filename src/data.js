@@ -7,7 +7,7 @@ import {
     SiSpringboot, SiMysql, SiTailwindcss,
     SiKubernetes, SiSpring,
     SiPostman, SiIntellijidea,
-    SiExpo , SiRedux 
+    SiExpo, SiRedux
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa6";
 
@@ -15,13 +15,13 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { BsFileEarmarkExcelFill } from "react-icons/bs";
 import { TbBrandReactNative } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
+import { g } from "framer-motion/client";
 
 
 const ems = "/assets/ems.png";
 const ecommerce = "/assets/ecommerce.avif";
 const btc = "/assets/btc.jpg";
 const quizapp = "/assets/quizapp.webp";
-const todoapp = "/assets/todoapp.avif";
 const financialLogo = "/assets/financial-logo.jpg";
 
 const awsLogo = "/assets/aws-academy-logo.jpeg";
@@ -31,6 +31,17 @@ const cognitiveClassLogo = "/assets/cognitive-class-logo.png";
 const nptelLogo = "/assets/nptel-logo.jpeg";
 const courseraLogo = "/assets/coursera-logo.jpg";
 const wiproLogo = "/assets/wipro-logo.jpeg";
+
+const naukriLogo = "/assets/naukri.png";
+const githubLogo = "/assets/github_logo.png";
+const linkedinLogo = "/assets/linkedin_logo.png";
+const upworkLogo = "/assets/upwork_logo.png";
+const mediumLogo = "/assets/medium_logo.png";
+const leetcodeLogo = "/assets/leetcode_logo.png";
+const instagramLogo = "/assets/instagram_logo.png";
+const twitterLogo = "/assets/x_logo.png";
+const telegramLogo = "/assets/telegram_logo.png";
+const geeksforgeeksLogo = "/assets/gfg_logo.png";
 
 export const fullName = "Darla Udaya Kiran";
 
@@ -50,39 +61,63 @@ export const contact = {
     socialLinks: [
         {
             name: "linkedin",
+            display: "LinkedIn",
             link: "https://www.linkedin.com/in/darla-uday-kiran-18a450239",
+            icon: linkedinLogo
         },
         {
             name: "github",
+            display: "GitHub",
             link: "https://github.com/uday900",
-        },
-        {
-            name: "leetcode",
-            link: "https://leetcode.com/u/uday080/"
+            icon: githubLogo
         },
         {
             name: "upwork",
-            link: "https://www.upwork.com/freelancers/~01b1c8e5a9c0e7d2f6"
+            display: "Upwork",
+            link: "https://www.upwork.com/freelancers/~01b1c8e5a9c0e7d2f6",
+            icon: upworkLogo
+        },
+        {
+            name: "leetcode",
+            display: "LeetCode",
+            link: "https://leetcode.com/u/uday080/",
+            icon: leetcodeLogo
+        },
+        {
+            name: "geeeksforgeeks",
+            display: "GeeksforGeeks",
+            link: "https://www.geeksforgeeks.org/profile/udaykirandbcy6?tab=activity",
+            icon: geeksforgeeksLogo
         },
         {
             name: "naukri",
-            link: "https://www.naukri.com/mnjuser/profile?id=&altresid"
+            display: "Naukri",
+            link: "https://www.naukri.com/mnjuser/profile?id=&altresid",
+            icon: naukriLogo
         },
         {
             name: "medium",
-            link: "https://uday900.medium.com/"
+            display: "Medium",
+            link: "https://uday900.medium.com/",
+            icon: mediumLogo
         },
         {
             name: "instagram",
+            display: "Instagram",
             link: "https://www.instagram.com/uday1709_?igsh=MTU1a2s4dWdlcWVmcQ==",
+            icon: instagramLogo
         },
         {
             name: "twitter",
+            display: "Twitter",
             link: "https://x.com/Delay1709",
+            icon: twitterLogo
         },
         {
             name: "telegram",
+            display: "Telegram",
             link: "https://t.me/uday1709",
+            icon: telegramLogo
         }
 
     ],
@@ -189,18 +224,6 @@ export const projects = [
             "Improved user engagement by 40% with an intuitive layout and easy-to-use functionalities."
         ],
         skills: ["React", "HTML", "CSS", "JavaScript"]
-    },
-    {
-        link: "https://udaytodoapp.netlify.app/",
-        name: "ToDo App",
-        image: todoapp,
-        points: [
-            "Developed a responsive Todo application that allows users to create, read, update, and delete tasks.",
-            "Implemented Redux for state management to handle task data efficiently.",
-            "Ensured the application is fully responsive for both desktop and mobile devices, enhancing user experience across platforms.",
-            "User-friendly interface for task management."
-        ],
-        skills: ["React.js", "Redux", "HTML", "CSS", "JavaScript"]
     }
 
 ];
@@ -252,34 +275,34 @@ export const experience = [
     }
 ]
 export const skills = [
-  { name: "Java", icon: FaJava, color: "#007396", delay: 0, type: "top", category: "Backend" },
-  { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F", delay: 0.2, type: "top", category: "Backend" },
-  { name: "React", icon: FaReact, color: "#61DAFB", delay: 0.4, type: "top", category: "Frontend" },
-  { name: "Docker", icon: FaDocker, color: "#2496ED", delay: 0.6, type: "top", category: "DevOps" },
-  { name: "AWS", icon: FaAws, color: "#FF9900", delay: 0.8, type: "top", category: "DevOps" },
+    { name: "Java", icon: FaJava, color: "#007396", delay: 0, type: "top", category: "Backend" },
+    { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F", delay: 0.2, type: "top", category: "Backend" },
+    { name: "React", icon: FaReact, color: "#61DAFB", delay: 0.4, type: "top", category: "Frontend" },
+    { name: "Docker", icon: FaDocker, color: "#2496ED", delay: 0.6, type: "top", category: "DevOps" },
+    { name: "AWS", icon: FaAws, color: "#FF9900", delay: 0.8, type: "top", category: "DevOps" },
 
-  { name: "Redux", icon: SiRedux, color: "#764ABC", delay: 1.0, category: "Frontend" },
-  { name: "HTML", icon: FaHtml5, color: "#E34F26", category: "Frontend" },
-  { name: "CSS", icon: FaCss3, color: "#1572B6", category: "Frontend" },
-  { name: "JavaScript", icon: FaJs, color: "#F7DF1E", category: "Frontend" },
-  { name: "Tailwind", icon: SiTailwindcss, color: "#38B2AC", category: "Frontend" },
+    { name: "Redux", icon: SiRedux, color: "#764ABC", delay: 1.0, category: "Frontend" },
+    { name: "HTML", icon: FaHtml5, color: "#E34F26", category: "Frontend" },
+    { name: "CSS", icon: FaCss3, color: "#1572B6", category: "Frontend" },
+    { name: "JavaScript", icon: FaJs, color: "#F7DF1E", category: "Frontend" },
+    { name: "Tailwind", icon: SiTailwindcss, color: "#38B2AC", category: "Frontend" },
 
-  { name: "Python", icon: FaPython, color: "#3776AB", category: "Backend" },
+    { name: "Python", icon: FaPython, color: "#3776AB", category: "Backend" },
 
-  { name: "MySQL", icon: SiMysql, color: "#4479A1", category: "Database" },
-  { name: "PostgreSQL", icon: BiLogoPostgresql, color: "#336791", category: "Database" },
+    { name: "MySQL", icon: SiMysql, color: "#4479A1", category: "Database" },
+    { name: "PostgreSQL", icon: BiLogoPostgresql, color: "#336791", category: "Database" },
 
-  { name: "Git", icon: FaGit, color: "#F05032", category: "DevOps" },
-  { name: "Kubernetes", icon: SiKubernetes, color: "#326CE5", category: "DevOps" },
+    { name: "Git", icon: FaGit, color: "#F05032", category: "DevOps" },
+    { name: "Kubernetes", icon: SiKubernetes, color: "#326CE5", category: "DevOps" },
 
-  { name: "React Native", icon: TbBrandReactNative, color: "#61DAFB", category: "Mobile" },
-  { name: "Expo", icon: SiExpo , color: "#000020", category: "Mobile" },
+    { name: "React Native", icon: TbBrandReactNative, color: "#61DAFB", category: "Mobile" },
+    { name: "Expo", icon: SiExpo, color: "#000020", category: "Mobile" },
 
-  { name: "Excel", icon: BsFileEarmarkExcelFill, color: "#217346", category: "Tools" },
-  { name: "Postman", icon: SiPostman, color: "#FF6C37", category: "Tools" },
-  { name: "Spring Tool Suite", icon: SiSpring, color: "#6DB33F", category: "Tools" },
-  { name: "IntelliJ IDEA", icon: SiIntellijidea, color: "#000000", category: "Tools" },
-  { name: "VS Code", icon: VscVscode, color: "#007ACC", category: "Tools" }
+    { name: "Excel", icon: BsFileEarmarkExcelFill, color: "#217346", category: "Tools" },
+    { name: "Postman", icon: SiPostman, color: "#FF6C37", category: "Tools" },
+    { name: "Spring Tool Suite", icon: SiSpring, color: "#6DB33F", category: "Tools" },
+    { name: "IntelliJ IDEA", icon: SiIntellijidea, color: "#000000", category: "Tools" },
+    { name: "VS Code", icon: VscVscode, color: "#007ACC", category: "Tools" }
 ];
 
 export const certifications = [

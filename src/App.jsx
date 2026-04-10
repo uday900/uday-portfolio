@@ -14,8 +14,8 @@ function App() {
      <Home/>
      <About/>
      <Technologies/>
-     <Projects/>
      <Experience/>
+     <Projects/>
      <Contact/>
      <footer className="bg-gray-800 text-white py-6 mt-10">
       <div className="max-w-4xl mx-auto px-6 text-center">
