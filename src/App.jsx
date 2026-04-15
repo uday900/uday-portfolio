@@ -17,7 +17,7 @@ function App() {
      <Experience/>
      <Projects/>
      <Contact/>
-     <footer className="bg-gray-800 text-white py-6 mt-10">
+     <footer className="bg-gray-800 text-white py-6 ">
       <div className="max-w-4xl mx-auto px-6 text-center">
         
         {/* Copyright and Creator Name */}

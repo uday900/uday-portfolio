@@ -9,13 +9,29 @@ import {
     SiPostman, SiIntellijidea,
     SiExpo, SiRedux
 } from "react-icons/si";
+
+import {
+    FaLinkedin,
+    FaGithub,
+    FaMedium,
+    FaInstagram,
+    FaTelegram,
+} from "react-icons/fa";
+
+import {
+    SiLeetcode,
+    SiUpwork,
+    SiGeeksforgeeks,
+    SiX
+} from "react-icons/si";
+
+
 import { FaAws } from "react-icons/fa6";
 
 import { BiLogoPostgresql } from "react-icons/bi";
 import { BsFileEarmarkExcelFill } from "react-icons/bs";
 import { TbBrandReactNative } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
-import { g } from "framer-motion/client";
 
 
 const ems = "/assets/ems.png";
@@ -31,17 +47,32 @@ const cognitiveClassLogo = "/assets/cognitive-class-logo.png";
 const nptelLogo = "/assets/nptel-logo.jpeg";
 const courseraLogo = "/assets/coursera-logo.jpg";
 const wiproLogo = "/assets/wipro-logo.jpeg";
-
 const naukriLogo = "/assets/naukri.png";
-const githubLogo = "/assets/github_logo.png";
-const linkedinLogo = "/assets/linkedin_logo.png";
-const upworkLogo = "/assets/upwork_logo.png";
-const mediumLogo = "/assets/medium_logo.png";
-const leetcodeLogo = "/assets/leetcode_logo.png";
-const instagramLogo = "/assets/instagram_logo.png";
-const twitterLogo = "/assets/x_logo.png";
-const telegramLogo = "/assets/telegram_logo.png";
-const geeksforgeeksLogo = "/assets/gfg_logo.png";
+
+const ecomVedieo = "/assets/projects_media/ecommerce-demo.mp4";
+const ecom1 = "/assets/projects_media/ecommerce_1.png";
+const ecom2 = "/assets/projects_media/ecommerce_2.png";
+const ecom3 = "/assets/projects_media/ecommerce_3.png";
+const ecom4 = "/assets/projects_media/ecommerce_4.png";
+const ecom5 = "/assets/projects_media/ecommerce_5.png";
+const ecom6 = "/assets/projects_media/ecommerce_6.png";
+const ecom7 = "/assets/projects_media/ecommerce_7.png";
+
+const quizapp_1 = "/assets/projects_media/quizapp_1.png";
+const quizapp_2 = "/assets/projects_media/quizapp_2.png";
+const quizapp_3 = "/assets/projects_media/quizapp_3.png";
+const quizapp_4 = "/assets/projects_media/quizapp_4.png";
+
+const fc_1 = "/assets/projects_media/fc_1.png";
+const fc_2 = "/assets/projects_media/fc_2.png";
+const fc_3 = "/assets/projects_media/fc_3.png";
+const fc_4 = "/assets/projects_media/fc_4.png";
+
+const btc_1 = "/assets/projects_media/btc_1.png";
+const btc_2 = "/assets/projects_media/btc_2.png";
+const btc_3 = "/assets/projects_media/btc_3.png";
+
+const ems_1 = "/assets/projects_media/ems_1.png";
 
 export const fullName = "Darla Udaya Kiran";
 
@@ -63,61 +94,62 @@ export const contact = {
             name: "linkedin",
             display: "LinkedIn",
             link: "https://www.linkedin.com/in/darla-uday-kiran-18a450239",
-            icon: linkedinLogo
+            icon: FaLinkedin
         },
         {
             name: "github",
             display: "GitHub",
             link: "https://github.com/uday900",
-            icon: githubLogo
+            icon: FaGithub
         },
         {
             name: "upwork",
             display: "Upwork",
             link: "https://www.upwork.com/freelancers/~01b1c8e5a9c0e7d2f6",
-            icon: upworkLogo
+            icon: SiUpwork
         },
         {
             name: "leetcode",
             display: "LeetCode",
             link: "https://leetcode.com/u/uday080/",
-            icon: leetcodeLogo
+            icon: SiLeetcode
         },
         {
             name: "geeeksforgeeks",
             display: "GeeksforGeeks",
             link: "https://www.geeksforgeeks.org/profile/udaykirandbcy6?tab=activity",
-            icon: geeksforgeeksLogo
+            icon: SiGeeksforgeeks
         },
         {
             name: "naukri",
             display: "Naukri",
             link: "https://www.naukri.com/mnjuser/profile?id=&altresid",
-            icon: naukriLogo
+            icon: null,
+            customIcon: naukriLogo
         },
         {
             name: "medium",
             display: "Medium",
             link: "https://uday900.medium.com/",
-            icon: mediumLogo
+            icon: FaMedium
         },
         {
             name: "instagram",
             display: "Instagram",
             link: "https://www.instagram.com/uday1709_?igsh=MTU1a2s4dWdlcWVmcQ==",
-            icon: instagramLogo
+            icon: FaInstagram
         },
         {
             name: "twitter",
             display: "Twitter",
             link: "https://x.com/Delay1709",
-            icon: twitterLogo
+            icon: SiX
         },
         {
             name: "telegram",
             display: "Telegram",
             link: "https://t.me/uday1709",
-            icon: telegramLogo
+            icon: FaTelegram
         }
 
     ],
@@ -134,105 +166,173 @@ export const contact = {
 
 export const projects = [
     {
-        name: "E-commerce Application",
-        image: ecommerce,
-        points: [
-            "Engineered and deployed a full-stack e-commerce platform using Java, Spring Boot, and REST APIs for the backend, and React with Tailwind CSS for the frontend, resulting in a 40% improvement in system efficiency.",
-            "Integrated OAuth authentication and secured the platform using Spring Security and JWT, reducing unauthorized access incidents by 95%.",
-            "Implemented Razorpay payment gateway, enabling secure transactions and improving checkout success rate by 30%.",
-            "Built dynamic features including product search, filtering, cart, order tracking, and review & rating systems, leading to a 35% boost in user engagement.",
-            "Enhanced admin panel with tools for real-time product management, user monitoring, order status updates, and payment tracking.",
-            "Improved system reliability by integrating robust exception handling, ensuring a smooth and consistent user experience."
-        ],
-        skills: [
-            "React",
-            "Tailwind CSS",
-            "Java",
-            "Spring Boot",
-            "REST API",
-            "JWT",
-            "Spring Security",
-            "OAuth",
-            "Razorpay Integration",
-            "HTML",
-            "CSS",
-            "JavaScript",
+        name: "E-commerce Platform",
 
-            "Axios",
-            "PostgresSQL",
-            "Postman",
-            "Git",
-            "GitHub",
-            "Maven",
-            "Spring Tool Suite",
-            "VS Code",
-            "Exception Handling",
-            "Responsive Web Design",
-            "API Security",
-            "Netlify",
-            "Render",
-            "Neon DB",
-            "Upstash"
+        video: ecomVedieo,
+        images: [ecom1, ecom2, ecom3, ecom4, ecom5, ecom6, ecom7],
+
+        role: "Full Stack Developer",
+        duration: "Dec 2024 – Mar 2025",
+
+        impact: [
+            "🚀 Boosted system performance by 40% through optimized APIs & DB queries",
+            "🔒 Reduced unauthorized access by 95% using JWT + OAuth security",
+            "💳 Increased checkout success rate by 30% via Razorpay integration",
         ],
-        link: "https://darlastores.netlify.app/",
-        git: "https://github.com/uday900/Darla-Stores"
+
+        tech: ["React", "Spring Boot", "AWS", "PostgreSQL", "Razorpay"],
+
+        description:
+            "Designed and deployed a scalable full-stack e-commerce platform with secure authentication, payment processing, and real-time admin operations.",
+
+        features: [
+            "Dynamic product catalog with filtering, search, and cart management",
+            "Secure authentication with JWT and OAuth",
+            "Admin dashboard for product, order, and user management",
+            "Payment integration with Razorpay and order tracking system",
+        ],
+
+        challenges: [
+            "Handled payment failures and ensured transaction consistency",
+            "Implemented secure token lifecycle (expiry, refresh)",
+            "Optimized backend APIs for high performance and scalability",
+        ],
+
+        github: "https://github.com/uday900/Darla-Stores",
+        live: "https://darlastores.netlify.app/",
     },
+
     {
         name: "Employee Management System",
-        image: ems,
-        points: [
-            "Developed an Employee Management System using React, Vite, Redux, and Tailwind CSS with role-based access control (RBAC), reducing administrative workload by 40%.",
-            "Designed a responsive and intuitive UI with Tailwind CSS, HTML, and JavaScript, improving engagement by 35% and reducing data entry errors by 25%.",
-            "Implemented role assignment, access level visualization, and dynamic UI updates, enhancing system adaptability by 50%."
+
+        images: [ems, ems_1],
+        role: "Full Stack Developer",
+        duration: "2023",
+
+        impact: [
+            "📉 Reduced administrative workload by 40% using RBAC system",
+            "📊 Improved UI efficiency and usability by 35%",
+            "⚙️ Increased system adaptability by 50% with dynamic role handling",
         ],
-        skills: ["React", "Vite", "Redux", "Tailwind CSS", "RBAC"],
-        link: "https://role-based-access-control-ui-task.netlify.app/",
-        git: "https://github.com/uday900/-Role-Based-Access-Control-UI"
+
+        tech: ["React", "Redux", "Tailwind"],
+
+        description:
+            "Developed a role-based employee management system enabling dynamic access control and efficient employee operations.",
+
+        features: [
+            "Role-based access control (RBAC)",
+            "Dynamic UI rendering based on user roles",
+            "Employee data management system",
+        ],
+
+        challenges: [
+            "Managing complex role-based permissions",
+            "Ensuring consistent state across dynamic UI updates",
+        ],
+
+        github: "https://github.com/uday900/-Role-Based-Access-Control-UI",
+        live: "https://employee-management-system-darla.netlify.app/",
     },
+
     {
         name: "Quiz Application",
-        image: quizapp,
-        points: [
-            "Developed a Quiz Application using React, Vite, and Redux, ensuring 99% compatibility across devices, leading to increased user engagement.",
-            "Integrated Redux for real-time quiz tracking and user interaction, improving user experience and boosting retention rates by 20%.",
-            "Implemented quiz creation, quiz-taking functionality, and score tracking, resulting in a 30% increase in daily active users."
+
+        images: [quizapp_1, quizapp_2, quizapp_3, quizapp_4],
+        role: "Full Stack Developer",
+        duration: "2023",
+
+        impact: [
+            "📱 Achieved 99% cross-device compatibility",
+            "📈 Increased user retention by 20% with real-time tracking",
+            "⚡ Boosted daily active users by 30%",
         ],
-        skills: ["React", "Vite", "Redux"],
-        link: "https://udayquizapp.netlify.app/",
-        git: "https://github.com/uday900/quizapp"
+
+        tech: ["React", "Redux"],
+
+        description:
+            "Built an interactive quiz platform with real-time tracking and performance analytics.",
+
+        features: [
+            "Quiz creation and participation system",
+            "Real-time score tracking using Redux",
+            "User-friendly responsive interface",
+        ],
+
+        challenges: [
+            "Managing real-time state updates efficiently",
+            "Ensuring smooth UX across multiple devices",
+        ],
+
+        github: "https://github.com/uday900/quizapp",
+        live: "https://udayquizapp.netlify.app/",
     },
 
     {
         name: "Brain Tumor Classification",
-        image: btc,
-        points: [
-            "Developed a Machine Learning-based Brain Tumor Detection model for MRI images, distinguishing between different tumor types with 95% accuracy.",
-            "Conducted on a dataset of 3064 images which contain three types of Brain Tumor (glioma, meningioma, pituitary)."
+
+        images: [btc, btc_1, btc_2, btc_3],
+        role: "Machine Learning Engineer",
+
+        impact: [
+            "🧠 Achieved 95% accuracy in tumor classification",
+            "📊 Processed 3000+ MRI images for training",
         ],
-        skills: ["Python", "Machine Learning"]
+
+        tech: ["Python", "Machine Learning"],
+
+        description:
+            "Developed a machine learning model for classifying brain tumors from MRI images.",
+
+        features: [
+            "Multi-class tumor classification (glioma, meningioma, pituitary)",
+            "Image preprocessing and feature extraction pipeline",
+        ],
+
+        challenges: [
+            "Handling dataset imbalance",
+            "Improving model accuracy through tuning",
+        ],
     },
 
     {
-        link: "https://financialcalculatorhub.netlify.app/",
         name: "Financial Calculator Hub",
-        image: financialLogo,
-        points: [
-            "Developed a Financial Calculator Hub to provide users with various financial calculation tools, including Loan EMI and Interest Calculators.",
-            "Built using React, ensuring a smooth and interactive user experience with real-time calculations.",
-            "Designed a responsive interface with Bootstrap, making it accessible across all devices.",
-            "Implemented a search feature to help users quickly find the required financial calculator.",
-            "Improved user engagement by 40% with an intuitive layout and easy-to-use functionalities."
-        ],
-        skills: ["React", "HTML", "CSS", "JavaScript"]
-    }
 
+        images: [financialLogo, fc_1, fc_2, fc_3, fc_4],
+        role: "Frontend Developer",
+        duration: "Aug 2024",
+
+        impact: [
+            "📈 Improved user engagement by 40%",
+            "⚡ Enabled real-time financial calculations",
+        ],
+
+        tech: ["React", "JavaScript"],
+
+        description:
+            "Built a financial tools platform providing real-time calculations for loans and interest.",
+
+        features: [
+            "Loan EMI and interest calculators",
+            "Search functionality for quick access",
+            "Responsive UI for all devices",
+        ],
+
+        challenges: [
+            "Ensuring accurate financial calculations",
+            "Optimizing UI responsiveness across devices",
+        ],
+
+        live: "https://financialcalculatorhub.netlify.app/",
+        github: "https://github.com/uday900/Loan-app",
+    },
 ];
 
 export const experience = [
     {
         duration: "Aug 2025 – Present",
         company_name: "Mojoes Technologies",
-        role: "Junior Java Developer",
+        role: "Junior Backend Developer",
         points: [
             "Developing and maintaining enterprise-level Java applications using Spring Boot, RESTful APIs, and microservices architecture.",
             "Collaborating with cross-functional teams to design and implement scalable backend systems and ensure smooth data flow.",
@@ -274,6 +374,7 @@ export const experience = [
         skills: ["HTML", "CSS", "JavaScript", "React.js"]
     }
 ]
+
 export const skills = [
     { name: "Java", icon: FaJava, color: "#007396", delay: 0, type: "top", category: "Backend" },
     { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F", delay: 0.2, type: "top", category: "Backend" },
@@ -296,12 +397,12 @@ export const skills = [
     { name: "Kubernetes", icon: SiKubernetes, color: "#326CE5", category: "DevOps" },
 
     { name: "React Native", icon: TbBrandReactNative, color: "#61DAFB", category: "Mobile" },
-    { name: "Expo", icon: SiExpo, color: "#000020", category: "Mobile" },
+    { name: "Expo", icon: SiExpo, color: "#38BDF8", category: "Mobile" },
 
     { name: "Excel", icon: BsFileEarmarkExcelFill, color: "#217346", category: "Tools" },
     { name: "Postman", icon: SiPostman, color: "#FF6C37", category: "Tools" },
     { name: "Spring Tool Suite", icon: SiSpring, color: "#6DB33F", category: "Tools" },
-    { name: "IntelliJ IDEA", icon: SiIntellijidea, color: "#000000", category: "Tools" },
+    { name: "IntelliJ IDEA", icon: SiIntellijidea, color: "#C084FC", category: "Tools" },
     { name: "VS Code", icon: VscVscode, color: "#007ACC", category: "Tools" }
 ];
 
@@ -396,7 +497,6 @@ export const interest = {
         "<b>Book Reading</b> - broadens my knowledge and creativity."
     ]
 };
-
 
 export const acheivments = [
     "🏆 Secured 1st Rank in 10th Grade (School Topper)",
