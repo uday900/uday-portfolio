@@ -1,4 +1,554 @@
 {
   "fullName": "Darla Udaya Kiran",
-  "bio": "..."
+  "bio": "I’m a passionate Full Stack Developer with over a year of hands-on experience building scalable backend systems and modern web applications.\nI specialize in Java and Spring Boot, designing secure, high-performance REST APIs and microservices for real-world use cases.\nOn the frontend, I work with React.js to create responsive and user-friendly interfaces that deliver seamless user experiences.\n\nI have practical experience deploying and managing applications on AWS, along with working on Docker and CI/CD pipelines to ensure reliable and production-ready systems.\nMy work includes building secure authentication systems using JWT and OAuth, implementing real-time features with WebSockets, and integrating payment gateways.\n\nI enjoy solving complex problems, optimizing performance, and building impactful digital products.\nI thrive in Agile environments, collaborating with cross-functional teams to deliver scalable and efficient solutions.\nI am continuously learning and exploring new technologies to grow as a software engineer.\n\nMy goal is to contribute to innovative projects, build high-quality systems, and create meaningful impact through technology.",
+  "resumeLink": "https://drive.google.com/file/d/1JBymYlXp9StJFgq-Z1fx7Gv91jUu4sDK/view?usp=drive_link",
+  "contact": {
+    "socialLinks": [
+      {
+        "name": "linkedin",
+        "display": "LinkedIn",
+        "link": "https://www.linkedin.com/in/darla-uday-kiran-18a450239",
+        "icon": "linkedin"
+      },
+      {
+        "name": "github",
+        "display": "GitHub",
+        "link": "https://github.com/uday900",
+        "icon": "github"
+      },
+      {
+        "name": "upwork",
+        "display": "Upwork",
+        "link": "https://www.upwork.com/freelancers/~01b1c8e5a9c0e7d2f6",
+        "icon": "upwork"
+      },
+      {
+        "name": "leetcode",
+        "display": "LeetCode",
+        "link": "https://leetcode.com/u/uday080/",
+        "icon": "leetcode"
+      },
+      {
+        "name": "geeeksforgeeks",
+        "display": "GeeksforGeeks",
+        "link": "https://www.geeksforgeeks.org/profile/udaykirandbcy6?tab=activity",
+        "icon": "geeksforgeeks"
+      },
+      {
+        "name": "naukri",
+        "display": "Naukri",
+        "link": "https://www.naukri.com/mnjuser/profile?id=&altresid",
+        "icon": null,
+        "customIcon": "/assets/naukri.png"
+      },
+      {
+        "name": "medium",
+        "display": "Medium",
+        "link": "https://uday900.medium.com/",
+        "icon": "medium"
+      },
+      {
+        "name": "instagram",
+        "display": "Instagram",
+        "link": "https://www.instagram.com/uday1709_?igsh=MTU1a2s4dWdlcWVmcQ==",
+        "icon": "instagram"
+      },
+      {
+        "name": "twitter",
+        "display": "Twitter",
+        "link": "https://x.com/Delay1709",
+        "icon": "x"
+      },
+      {
+        "name": "telegram",
+        "display": "Telegram",
+        "link": "https://t.me/uday1709",
+        "icon": "telegram"
+      }
+    ],
+    "email": "udaykirandarla2002gmail.com",
+    "mobile": "+91 6301436515",
+    "city": "Hyderabad",
+    "country": "India",
+    "state": "Telangana",
+    "zip": "500081",
+    "town": "Madhapur"
+  },
+  "projects": [
+    {
+      "name": "E-commerce Platform",
+      "video": "/assets/projects_media/ecommerce-demo.mp4",
+      "images": [
+        "/assets/projects_media/ecommerce_1.png",
+        "/assets/projects_media/ecommerce_2.png",
+        "/assets/projects_media/ecommerce_3.png",
+        "/assets/projects_media/ecommerce_4.png",
+        "/assets/projects_media/ecommerce_5.png",
+        "/assets/projects_media/ecommerce_6.png",
+        "/assets/projects_media/ecommerce_7.png"
+      ],
+      "role": "Full Stack Developer",
+      "duration": "Dec 2024 – Mar 2025",
+      "impact": [
+        "🚀 Boosted system performance by 40% through optimized APIs & DB queries",
+        "🔒 Reduced unauthorized access by 95% using JWT + OAuth security",
+        "💳 Increased checkout success rate by 30% via Razorpay integration"
+      ],
+      "tech": [
+        "React",
+        "Spring Boot",
+        "AWS",
+        "PostgreSQL",
+        "Razorpay"
+      ],
+      "description": "Designed and deployed a scalable full-stack e-commerce platform with secure authentication, payment processing, and real-time admin operations.",
+      "features": [
+        "Dynamic product catalog with filtering, search, and cart management",
+        "Secure authentication with JWT and OAuth",
+        "Admin dashboard for product, order, and user management",
+        "Payment integration with Razorpay and order tracking system"
+      ],
+      "challenges": [
+        "Handled payment failures and ensured transaction consistency",
+        "Implemented secure token lifecycle (expiry, refresh)",
+        "Optimized backend APIs for high performance and scalability"
+      ],
+      "github": "https://github.com/uday900/Darla-Stores",
+      "live": "https://darlastores.netlify.app/"
+    },
+    {
+      "name": "Employee Management System",
+      "images": [
+        "/assets/ems.png",
+        "/assets/projects_media/ems_1.png"
+      ],
+      "role": "Full Stack Developer",
+      "duration": "2023",
+      "impact": [
+        "📉 Reduced administrative workload by 40% using RBAC system",
+        "📊 Improved UI efficiency and usability by 35%",
+        "⚙️ Increased system adaptability by 50% with dynamic role handling"
+      ],
+      "tech": [
+        "React",
+        "Redux",
+        "Tailwind"
+      ],
+      "description": "Developed a role-based employee management system enabling dynamic access control and efficient employee operations.",
+      "features": [
+        "Role-based access control (RBAC)",
+        "Dynamic UI rendering based on user roles",
+        "Employee data management system"
+      ],
+      "challenges": [
+        "Managing complex role-based permissions",
+        "Ensuring consistent state across dynamic UI updates"
+      ],
+      "github": "https://github.com/uday900/-Role-Based-Access-Control-UI",
+      "live": "https://employee-management-system-darla.netlify.app/"
+    },
+    {
+      "name": "Quiz Application",
+      "images": [
+        "/assets/projects_media/quizapp_1.png",
+        "/assets/projects_media/quizapp_2.png",
+        "/assets/projects_media/quizapp_3.png",
+        "/assets/projects_media/quizapp_4.png"
+      ],
+      "role": "Full Stack Developer",
+      "duration": "2023",
+      "impact": [
+        "📱 Achieved 99% cross-device compatibility",
+        "📈 Increased user retention by 20% with real-time tracking",
+        "⚡ Boosted daily active users by 30%"
+      ],
+      "tech": [
+        "React",
+        "Redux"
+      ],
+      "description": "Built an interactive quiz platform with real-time tracking and performance analytics.",
+      "features": [
+        "Quiz creation and participation system",
+        "Real-time score tracking using Redux",
+        "User-friendly responsive interface"
+      ],
+      "challenges": [
+        "Managing real-time state updates efficiently",
+        "Ensuring smooth UX across multiple devices"
+      ],
+      "github": "https://github.com/uday900/quizapp",
+      "live": "https://udayquizapp.netlify.app/"
+    },
+    {
+      "name": "Brain Tumor Classification",
+      "images": [
+        "/assets/btc.jpg",
+        "/assets/projects_media/btc_1.png",
+        "/assets/projects_media/btc_2.png",
+        "/assets/projects_media/btc_3.png"
+      ],
+      "role": "Machine Learning Engineer",
+      "impact": [
+        "🧠 Achieved 95% accuracy in tumor classification",
+        "📊 Processed 3000+ MRI images for training"
+      ],
+      "tech": [
+        "Python",
+        "Machine Learning"
+      ],
+      "description": "Developed a machine learning model for classifying brain tumors from MRI images.",
+      "features": [
+        "Multi-class tumor classification (glioma, meningioma, pituitary)",
+        "Image preprocessing and feature extraction pipeline"
+      ],
+      "challenges": [
+        "Handling dataset imbalance",
+        "Improving model accuracy through tuning"
+      ]
+    },
+    {
+      "name": "Financial Calculator Hub",
+      "images": [
+        "/assets/financial-logo.jpg",
+        "/assets/projects_media/fc_1.png",
+        "/assets/projects_media/fc_2.png",
+        "/assets/projects_media/fc_3.png",
+        "/assets/projects_media/fc_4.png"
+      ],
+      "role": "Frontend Developer",
+      "duration": "Aug 2024",
+      "impact": [
+        "📈 Improved user engagement by 40%",
+        "⚡ Enabled real-time financial calculations"
+      ],
+      "tech": [
+        "React",
+        "JavaScript"
+      ],
+      "description": "Built a financial tools platform providing real-time calculations for loans and interest.",
+      "features": [
+        "Loan EMI and interest calculators",
+        "Search functionality for quick access",
+        "Responsive UI for all devices"
+      ],
+      "challenges": [
+        "Ensuring accurate financial calculations",
+        "Optimizing UI responsiveness across devices"
+      ],
+      "live": "https://financialcalculatorhub.netlify.app/",
+      "github": "https://github.com/uday900/Loan-app"
+    }
+  ],
+  "experience": [
+    {
+      "duration": "Aug 2025 – Present",
+      "company_name": "Mojoes Technologies",
+      "role": "Junior Backend Developer",
+      "points": [
+        "Developing and maintaining enterprise-level Java applications using Spring Boot, RESTful APIs, and microservices architecture.",
+        "Collaborating with cross-functional teams to design and implement scalable backend systems and ensure smooth data flow.",
+        "Managing deployment and monitoring processes using AWS services including EC2, S3, and RDS.",
+        "Promoted from Intern to Junior Developer for delivering high-quality, production-grade backend modules within tight deadlines."
+      ],
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "AWS",
+        "RESTful APIs",
+        "PostgreSQL",
+        "Git",
+        "Bit bucket",
+        "CI/CD"
+      ]
+    },
+    {
+      "duration": "Apr 2025 – Jul 2025",
+      "company_name": "Mojoes Technologies",
+      "role": "Java Developer Intern",
+      "points": [
+        "Assisted in backend development using Java and Spring Boot under senior developer guidance.",
+        "Participated in designing RESTful APIs and integrating them with front-end interfaces.",
+        "Built responsive user interfaces using HTML, CSS, and JavaScript for internal modules.",
+        "Gained exposure to debugging, testing, and optimizing code for better performance."
+      ],
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "PostgreSQL",
+        "AWS",
+        "REST",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Git"
+      ]
+    },
+    {
+      "duration": "Apr 2022 to Jun 2022",
+      "company_name": "Indian Servers",
+      "role": "Machine Learning Intern",
+      "points": [
+        "Gained practical experience in Python modules and Machine Learning",
+        "Developed a machine learning model for brain tumor classification using Python, achieving a 95% accuracy rate on a dataset of 3064 MRI images."
+      ],
+      "skills": [
+        "Python",
+        "Machine Learning",
+        "Pandas",
+        "Numpy"
+      ]
+    },
+    {
+      "duration": "Apr 2022 to Jun 2022",
+      "company_name": "IIDT Blackbucks",
+      "role": "Web Developer Intern",
+      "points": [
+        "Engaged in hands-on training in web development, focusing on front-end and back-end technologies",
+        "Collaborated with senior developers to implement best practices and enhance application functionality"
+      ],
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React.js"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Java",
+      "icon": "java",
+      "color": "#007396",
+      "delay": 0,
+      "type": "top",
+      "category": "Backend"
+    },
+    {
+      "name": "Spring Boot",
+      "icon": "springboot",
+      "color": "#6DB33F",
+      "delay": 0.2,
+      "type": "top",
+      "category": "Backend"
+    },
+    {
+      "name": "React",
+      "icon": "react",
+      "color": "#61DAFB",
+      "delay": 0.4,
+      "type": "top",
+      "category": "Frontend"
+    },
+    {
+      "name": "Docker",
+      "icon": "docker",
+      "color": "#2496ED",
+      "delay": 0.6,
+      "type": "top",
+      "category": "DevOps"
+    },
+    {
+      "name": "AWS",
+      "icon": "aws",
+      "color": "#FF9900",
+      "delay": 0.8,
+      "type": "top",
+      "category": "DevOps"
+    },
+    {
+      "name": "Redux",
+      "icon": "redux",
+      "color": "#764ABC",
+      "delay": 1,
+      "category": "Frontend"
+    },
+    {
+      "name": "HTML",
+      "icon": "html",
+      "color": "#E34F26",
+      "category": "Frontend"
+    },
+    {
+      "name": "CSS",
+      "icon": "css",
+      "color": "#1572B6",
+      "category": "Frontend"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "javascript",
+      "color": "#F7DF1E",
+      "category": "Frontend"
+    },
+    {
+      "name": "Tailwind",
+      "icon": "tailwind",
+      "color": "#38B2AC",
+      "category": "Frontend"
+    },
+    {
+      "name": "Python",
+      "icon": "python",
+      "color": "#3776AB",
+      "category": "Backend"
+    },
+    {
+      "name": "MySQL",
+      "icon": "mysql",
+      "color": "#4479A1",
+      "category": "Database"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "postgresql",
+      "color": "#336791",
+      "category": "Database"
+    },
+    {
+      "name": "Git",
+      "icon": "git",
+      "color": "#F05032",
+      "category": "DevOps"
+    },
+    {
+      "name": "Kubernetes",
+      "icon": "kubernetes",
+      "color": "#326CE5",
+      "category": "DevOps"
+    },
+    {
+      "name": "React Native",
+      "icon": "reactnative",
+      "color": "#61DAFB",
+      "category": "Mobile"
+    },
+    {
+      "name": "Expo",
+      "icon": "expo",
+      "color": "#38BDF8",
+      "category": "Mobile"
+    },
+    {
+      "name": "Excel",
+      "icon": "excel",
+      "color": "#217346",
+      "category": "Tools"
+    },
+    {
+      "name": "Postman",
+      "icon": "postman",
+      "color": "#FF6C37",
+      "category": "Tools"
+    },
+    {
+      "name": "Spring Tool Suite",
+      "icon": "spring",
+      "color": "#6DB33F",
+      "category": "Tools"
+    },
+    {
+      "name": "IntelliJ IDEA",
+      "icon": "intellij",
+      "color": "#C084FC",
+      "category": "Tools"
+    },
+    {
+      "name": "VS Code",
+      "icon": "vscode",
+      "color": "#007ACC",
+      "category": "Tools"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "TalentNext course on Java Full Stack",
+      "issuer": "Wipro @TalentNext",
+      "issuerLogo": "/assets/wipro-logo.jpeg",
+      "link": "https://cert.diceid.com/csr/cid/5BjoMa?verify=true"
+    },
+    {
+      "name": "AWS Academy Graduate - AWS Academy Cloud Foundations",
+      "issuer": "AWS Academy",
+      "issuerLogo": "/assets/aws-academy-logo.jpeg",
+      "link": "https://www.credly.com/go/axYx1Se2"
+    },
+    {
+      "name": "React JS",
+      "issuer": "Infosys Springboard",
+      "issuerLogo": "/assets/infosys-springboard-logo.png",
+      "link": "https://drive.google.com/file/d/13ik_Kpz72fZDBHmlg3U9sYGdAQrPtRo-/view?usp=sharing"
+    },
+    {
+      "name": "SQL and Relational Databases",
+      "issuer": "Cognitive Class",
+      "issuerLogo": "/assets/cognitive-class-logo.png",
+      "link": "https://drive.google.com/file/d/1kdYh9bApd8zFLDxoA4Ix9T2NVDYJwOBL/view?usp=sharing"
+    },
+    {
+      "name": "Java Full Stack",
+      "issuer": "Digital Lync",
+      "issuerLogo": "/assets/digital-lync-logo.jpeg",
+      "link": "https://drive.google.com/file/d/1QJQZ-WO-Mbd7RJ-JT5y9c2_uTL-XzMvE/view?usp=sharing"
+    },
+    {
+      "name": "Programming in Java",
+      "issuer": "NPTEL",
+      "issuerLogo": "/assets/nptel-logo.jpeg",
+      "link": "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS47S3345036102220759"
+    },
+    {
+      "name": "The Joy of Computing using Python",
+      "issuer": "NPTEL",
+      "issuerLogo": "/assets/nptel-logo.jpeg",
+      "link": "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL21CS75S1354014803223592"
+    },
+    {
+      "name": "Google Data Analytics",
+      "issuer": "Coursera",
+      "issuerLogo": "/assets/coursera-logo.jpg",
+      "link": "https://coursera.org/verify/professional-cert/XW5RZV24BQQB"
+    },
+    {
+      "name": "AWS Academy Machine Learning Foundations",
+      "issuer": "AWS Academy",
+      "issuerLogo": "/assets/aws-academy-logo.jpeg",
+      "link": "https://www.credly.com/go/AHr3r3MA"
+    }
+  ],
+  "education": [
+    {
+      "college": "R.V.R & J.C College of Engineering",
+      "degree": "B.Tech in Computer Science and Engineering",
+      "duration": "2020-2024",
+      "grade": "CGPA: 8.16"
+    },
+    {
+      "college": "Sri Pratibha Junior College",
+      "degree": "Intermediate",
+      "duration": "2018-2020",
+      "grade": "CGPA: 9.78"
+    },
+    {
+      "college": "ZPH Boys High School",
+      "degree": "SSC",
+      "duration": "2017-2018",
+      "grade": "CGPA: 9.7"
+    }
+  ],
+  "interest": {
+    "title": "Beyond the Code",
+    "description": "Apart from coding, I enjoy activities that help me stay sharp, balanced, and creative.",
+    "items": [
+      "<b>Playing Chess</b> - sharpens my strategic thinking and focus.",
+      "<b>Yoga</b> - keeps me balanced and mindful.",
+      "<b>Cricket</b> - encourages teamwork and sportsmanship.",
+      "<b>Book Reading</b> - broadens my knowledge and creativity."
+    ]
+  },
+  "acheivments": [
+    "🏆 Secured 1st Rank in 10th Grade (School Topper)",
+    "🧠 Actively participated in Data Structures & Algorithms (DSA) workshops",
+    "📈 Solved 150+ Data Structures and Algorithms problems on LeetCode"
+  ]
 }
