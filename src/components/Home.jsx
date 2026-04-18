@@ -36,7 +36,7 @@ const HeroSection = () => {
       timeout = setTimeout(() => setIsDeleting(true), 1000);
     } else if (isDeleting && charIndex === 0) {
       setIsDeleting(false);
-      setIndex((prev) => (prev + 1) % designations.length);
+      setIndex((prev) => (prev + 1) % sub_designations.length);
     }
 
     return () => clearTimeout(timeout);
