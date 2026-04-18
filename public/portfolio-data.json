@@ -1,5 +1,12 @@
 {
   "fullName": "Darla Udaya Kiran",
+  "designation": "Full Stack Developer",
+  "sub_designations": [
+  "Fullstack Developer",
+  "Java Developer",
+  "Backend Developer",
+  "Frontend Developer"
+  ],
   "bio": "I’m a passionate Full Stack Developer with over a year of hands-on experience building scalable backend systems and modern web applications.\nI specialize in Java and Spring Boot, designing secure, high-performance REST APIs and microservices for real-world use cases.\nOn the frontend, I work with React.js to create responsive and user-friendly interfaces that deliver seamless user experiences.\n\nI have practical experience deploying and managing applications on AWS, along with working on Docker and CI/CD pipelines to ensure reliable and production-ready systems.\nMy work includes building secure authentication systems using JWT and OAuth, implementing real-time features with WebSockets, and integrating payment gateways.\n\nI enjoy solving complex problems, optimizing performance, and building impactful digital products.\nI thrive in Agile environments, collaborating with cross-functional teams to deliver scalable and efficient solutions.\nI am continuously learning and exploring new technologies to grow as a software engineer.\n\nMy goal is to contribute to innovative projects, build high-quality systems, and create meaningful impact through technology.",
   "resumeLink": "https://drive.google.com/file/d/1JBymYlXp9StJFgq-Z1fx7Gv91jUu4sDK/view?usp=drive_link",
   "contact": {
