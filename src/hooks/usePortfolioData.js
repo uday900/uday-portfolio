@@ -55,7 +55,7 @@ const fetchPortfolioData = async () => {
     let freshData;
 
     try {
-      freshData = await fetchJson(CDN_URL);
+      freshData = await fetchJson(FALLBACK_URL);
     } catch {
       freshData = await fetchJson(FALLBACK_URL);
     }

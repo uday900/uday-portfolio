@@ -19,7 +19,7 @@ const HeroSection = () => {
   const socialLinks = contact?.socialLinks || [];
 
   useEffect(() => {
-    const currentText = data?.sub_designations[index] || "";
+    const currentText = data?.sub_designations[index];
     let timeout;
 
     if (!isDeleting && charIndex < currentText.length) {
